@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Getting Started: Serving Web Content</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+
+<a th:href="@{https://github.com/login/oauth/authorize(scope=${'admin:repo_hook repo'},client_id=${client_id})}">
+<!--<a href="https://github.com/login/oauth/authorize?scope= admin:repo_hook%20repo&client_id=${client_id}">-->
+    Click here</a>
+
+<!--<p th:text="'Hello, ' + ${name} + '!'" />-->
+<!--<p th:text="'Properties, ' + ${properties} + '!'" />-->
+<!--<p th:text="'Your session: ' + ${session_info} + '!'" />-->
+<!--<p  th:text="${#current_user.get('login')}"/>-->
+
+<p  th:text="'Id:' + (${current_user != null} ? ${current_user.get('id')} : 'null value!')"/>
+<p  th:text="'Login: ' + (${current_user != null} ? ${current_user.get('login')} : 'null value!')"/>
+<p  th:text="'Email: ' + (${current_user != null} ? ${current_user.get('email')} : 'null value!')"/>
+<p  th:text="'Name: ' + (${current_user != null} ? ${current_user.get('name')} : 'null value!')"/>
+<p  th:text="'Followers: ' + (${current_user != null} ? ${current_user.get('followers')} : 'null value!')"/>
+</body>
+</html>
