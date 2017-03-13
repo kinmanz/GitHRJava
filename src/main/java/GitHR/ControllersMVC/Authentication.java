@@ -83,7 +83,9 @@ public class Authentication {
 
 
         model.addAttribute("name", code);
-        return "CV";
+
+//        redirect to main page
+        return  "redirect:/";
     }
 
 }
