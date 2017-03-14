@@ -6,7 +6,7 @@
 </head>
 <body>
 
-<a th:href="@{https://github.com/login/oauth/authorize(scope=${'admin:repo_hook repo'},client_id=${client_id})}">
+<a th:href="@{https://github.com/login/oauth/authorize(scope=${'user public_repo repo repo_deployment repo:status read:repo_hook read:org read:public_key read:gpg_key'},client_id=${client_id})}">
 <!--<a href="https://github.com/login/oauth/authorize?scope= admin:repo_hook%20repo&client_id=${client_id}">-->
     Click here</a>
 
@@ -20,5 +20,6 @@
 <p  th:text="'Email: ' + (${current_user != null} ? ${current_user.get('email')} : 'null value!')"/>
 <p  th:text="'Name: ' + (${current_user != null} ? ${current_user.get('name')} : 'null value!')"/>
 <p  th:text="'Followers: ' + (${current_user != null} ? ${current_user.get('followers')} : 'null value!')"/>
+<p  th:text="'Token: ' + ${token}"/>
 </body>
 </html>

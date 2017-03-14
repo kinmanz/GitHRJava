@@ -1,4 +1,9 @@
 {
+  viewer {
+      avatarURL
+      login
+      url
+    }
   user(login: "%s") {
     pinnedRepositories(first: 100) {
       totalCount

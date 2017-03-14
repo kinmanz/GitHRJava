@@ -36,6 +36,8 @@ class MainController {
         model.addAttribute("properties", propertyService.getProperties().stringPropertyNames());
         model.addAttribute("client_id", propertyService.getProperties().getProperty("client_id"));
         model.addAttribute("session_info", gitHubService.getToken() + " --- " + session.getAttribute("token"));
+        model.addAttribute("token", gitHubService.getToken() + " --- " + session.getAttribute("token"));
+
 
         if (gitHubService.tokenIsSet()) {
             model.addAttribute("current_user", gitHubService.getAuthenticatedUser());
