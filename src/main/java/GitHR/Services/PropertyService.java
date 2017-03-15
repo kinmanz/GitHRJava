@@ -1,6 +1,7 @@
 package GitHR.Services;
 
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
 import javax.validation.constraints.NotNull;
 import java.io.FileInputStream;
@@ -8,7 +9,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
 
-@Component
+@Service
 public class PropertyService {
 
     static private final Properties properties;

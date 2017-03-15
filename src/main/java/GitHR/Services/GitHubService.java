@@ -14,6 +14,7 @@ import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.web.client.RestTemplateBuilder;
 import org.springframework.context.annotation.Scope;
 import org.springframework.context.annotation.ScopedProxyMode;
 import org.springframework.core.task.TaskExecutor;
@@ -21,6 +22,7 @@ import org.springframework.scheduling.annotation.Async;
 import org.springframework.scheduling.annotation.AsyncResult;
 import org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
 import java.io.IOException;
 import java.nio.charset.Charset;
@@ -31,7 +33,7 @@ import java.util.concurrent.Future;
 
 import static java.lang.System.exit;
 
-@Component
+@Service
 @Scope(value="session", proxyMode = ScopedProxyMode.TARGET_CLASS)
 public class GitHubService {
 
@@ -107,8 +109,6 @@ public class GitHubService {
     *  return: JSONObject corresponding to specified user,
     *  or null if that user doesn't have contribution to that repo
     * */
-
-
     public JSONObject getRepoContributionForProfile(String repoFullName, String userLogin) throws IOException {
         JSONArray jsonArray = getRepoContributers(repoFullName);
         for (ListIterator iterator = jsonArray.listIterator(jsonArray.size()); iterator.hasPrevious();) {
@@ -121,10 +121,22 @@ public class GitHubService {
         return null;
     }
 
-    @Async
+    @Async("taskExecutorAPICalls")
     public Future<JSONObject> getRepoContributionForProfileFuture(String repoFullName, String userLogin) throws IOException {
         return new AsyncResult<>(getRepoContributionForProfile(repoFullName, userLogin));
     }
+
+//    @Async("taskExecutorAPICalls")
+//    public Future<?> getWait() throws Exception{
+//        return new AsyncResult<>(waitTest());
+//    }
+//
+//    public Object waitTest() throws Exception{
+//        System.out.println("!!!!!-!!!!!!!-!!!!!****");
+//        Thread.sleep(10000);
+//        return null;
+//    }
+
 
 
     private static final String getProfileInfoGraphQLQuery;

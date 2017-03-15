@@ -30,7 +30,7 @@ class MainController {
     @GetMapping
     public String mainPage(HttpSession session,
                            @RequestParam(value="name", required=false, defaultValue="World") String name,
-                           Model model) throws IOException{
+                           Model model) throws Exception{
 
         model.addAttribute("name", name);
         model.addAttribute("properties", propertyService.getProperties().stringPropertyNames());
