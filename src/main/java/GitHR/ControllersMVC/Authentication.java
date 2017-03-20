@@ -2,35 +2,27 @@ package GitHR.ControllersMVC;
 
 import GitHR.Services.GitHubService;
 import GitHR.Services.PropertyService;
+import com.google.gson.JsonElement;
+import com.google.gson.JsonParser;
 import org.apache.http.HttpResponse;
 import org.apache.http.NameValuePair;
 import org.apache.http.client.entity.UrlEncodedFormEntity;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.impl.client.CloseableHttpClient;
-import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.impl.client.HttpClients;
 import org.apache.http.message.BasicNameValuePair;
 import org.apache.http.util.EntityUtils;
-import org.json.simple.parser.JSONParser;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
-import org.json.simple.parser.ParseException;
 
 import javax.servlet.http.HttpSession;
-import javax.validation.constraints.NotNull;
 import java.io.IOException;
-import java.io.InputStream;
-import java.io.UnsupportedEncodingException;
-import java.net.MalformedURLException;
-import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
-import org.json.simple.JSONArray;
-import org.json.simple.JSONObject;
 
 @Controller
 @RequestMapping("/auth")
@@ -48,7 +40,7 @@ public class Authentication {
 
     @GetMapping("/callback")
     public String callback(HttpSession session,
-                           @RequestParam(value="code") String code,
+                           @RequestParam(value = "code") String code,
                            Model model) {
 
         HttpResponse response;
@@ -65,10 +57,10 @@ public class Authentication {
             response = httpclient.execute(postRequest);
             String json_string = EntityUtils.toString(response.getEntity());
 
-            JSONParser parser = new JSONParser();
-            JSONObject json = (JSONObject) parser.parse(json_string);
+            JsonParser parser = new JsonParser();
+            JsonElement jsonElement = parser.parse(json_string);
 
-            String access_token = (String) json.get("access_token");
+            String access_token = (String) jsonElement.getAsJsonObject().get("access_token").getAsString();
 
             if (access_token == null) {
                 throw new NullPointerException("Didn't get token !!!");
@@ -76,7 +68,7 @@ public class Authentication {
 
             session.setAttribute("token", access_token);
             gitHubService.setToken(access_token);
-        } catch (IOException | ParseException | NullPointerException e) {
+        } catch (IOException | NullPointerException e) {
             System.out.println("Authentication Error !!!");
             e.printStackTrace();
         }
@@ -85,7 +77,7 @@ public class Authentication {
         model.addAttribute("name", code);
 
 //        redirect to main page
-        return  "redirect:/";
+        return "redirect:/";
     }
 
 }
