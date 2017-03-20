@@ -3,6 +3,7 @@ package GitHR.ControllersMVC;
 import GitHR.Services.GitHubService;
 import GitHR.Services.PropertyService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -21,6 +22,7 @@ class MainController {
     private final PropertyService propertyService;
     private final GitHubService gitHubService;
 
+
     @Autowired
     public MainController(PropertyService propertyService, GitHubService gitHubService) {
         this.propertyService = propertyService;
@@ -31,7 +33,6 @@ class MainController {
     public String mainPage(HttpSession session,
                            @RequestParam(value="name", required=false, defaultValue="World") String name,
                            Model model) throws Exception{
-
         model.addAttribute("name", name);
         model.addAttribute("properties", propertyService.getProperties().stringPropertyNames());
         model.addAttribute("client_id", propertyService.getProperties().getProperty("client_id"));
@@ -42,7 +43,7 @@ class MainController {
         if (gitHubService.tokenIsSet()) {
             model.addAttribute("current_user", gitHubService.getAuthenticatedUser());
         }
-        return "main";
+        return "styled/index";
     }
 
     @GetMapping("/{nick}")

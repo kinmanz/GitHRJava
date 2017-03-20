@@ -1,6 +1,8 @@
 
 .idea/
-src/main/java/GitHR/config.properties
+src/main/resources/config.properties
 src/test/
 target/
 /firstGitHR.iml
+/src/main/resources/config.properties
+/src/main/resources/application.properties

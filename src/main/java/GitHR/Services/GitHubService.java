@@ -1,6 +1,7 @@
 package GitHR.Services;
 
 import GitHR.Entities.JSONObjWrapper;
+import com.google.gson.*;
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.methods.HttpGet;
@@ -9,10 +10,7 @@ import org.apache.http.entity.StringEntity;
 import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClients;
 import org.apache.http.util.EntityUtils;
-import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
-import org.json.simple.parser.JSONParser;
-import org.json.simple.parser.ParseException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.web.client.RestTemplateBuilder;
 import org.springframework.context.annotation.Scope;
@@ -29,6 +27,7 @@ import java.nio.charset.Charset;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.*;
+import java.util.concurrent.ExecutionException;
 import java.util.concurrent.Future;
 
 import static java.lang.System.exit;
@@ -68,9 +67,9 @@ public class GitHubService {
     * Provide urlPath with leading slash !!!
     * for example: /user
     * */
-    private Object makeRequest(final String urlPath) throws IOException{
+    private JsonElement makeRequest(final String urlPath) throws IOException {
         HttpResponse response;
-        JSONParser parser = new JSONParser();
+        JsonParser parser = new JsonParser();
         CloseableHttpClient httpclient = HttpClients.createDefault();
 
         HttpGet postRequest = new HttpGet(API_URL + urlPath);
@@ -80,26 +79,36 @@ public class GitHubService {
         try {
             response = httpclient.execute(postRequest);
             String json_string = EntityUtils.toString(response.getEntity());
+            JsonElement jsonElement = parser.parse(json_string);
 
-            return parser.parse(json_string);
-        } catch (IOException | ParseException | NullPointerException e) {
+            return jsonElement;
+        } catch (NullPointerException e) {
             System.out.println("GitHub Service request ERROR !!!");
             e.printStackTrace();
             throw new IOException(String.format("GitHubService.makeRequest( %s ) exception", urlPath));
         }
     }
 
-    public JSONObject getAuthenticatedUser() throws IOException {
-        return (JSONObject) makeRequest("/user");
+    public JsonObject getAuthenticatedUser() throws IOException {
+        return makeRequest("/user").getAsJsonObject();
     }
 
-    public JSONObject getUser(String login) throws IOException{
-        return (JSONObject) makeRequest("/users/" + login);
+    public JsonObject getUser(String login) throws IOException{
+        return  makeRequest("/users/" + login).getAsJsonObject();
     }
 
 //    expect repoFullName, for example d3/d3 or kinmanz/working
-    public JSONArray getRepoContributers(String repoFullName) throws IOException {
-        return ((JSONArray) makeRequest("/repos/" + repoFullName + "/stats/contributors"));
+    public JsonArray getRepoContributers(String repoFullName) throws IOException {
+
+        JsonElement result = makeRequest("/repos/" + repoFullName + "/stats/contributors");
+
+        if (result.isJsonObject()) {
+            JsonArray arr = new JsonArray();
+            arr.add(result);
+            return arr;
+        }
+
+        return result.getAsJsonArray();
     }
 
 
@@ -109,20 +118,25 @@ public class GitHubService {
     *  return: JSONObject corresponding to specified user,
     *  or null if that user doesn't have contribution to that repo
     * */
-    public JSONObject getRepoContributionForProfile(String repoFullName, String userLogin) throws IOException {
-        JSONArray jsonArray = getRepoContributers(repoFullName);
-        for (ListIterator iterator = jsonArray.listIterator(jsonArray.size()); iterator.hasPrevious();) {
-            final Object object = iterator.previous();
-            JSONObjWrapper jsonObjWrapper = new JSONObjWrapper((JSONObject) object);
-            if (userLogin.equals(jsonObjWrapper.getObj("author").getField("login"))) {
-                return  (JSONObject) object;
+    public JsonObject getRepoContributionForProfile(String repoFullName, String userLogin) throws IOException {
+        JsonArray jsonArray = getRepoContributers(repoFullName);
+        for (JsonElement jsonElement : jsonArray) {
+            JsonObject jsonObject = jsonElement.getAsJsonObject();
+            try {
+                if (userLogin.equals(jsonObject.getAsJsonObject("author").get("login").getAsString())) {
+                    return  jsonObject;
+                }
+            } catch (NullPointerException e) {
+                System.out.println("Error: " + repoFullName + " ============= " + userLogin);
+                e.printStackTrace();
             }
+
         }
         return null;
     }
 
     @Async("taskExecutorAPICalls")
-    public Future<JSONObject> getRepoContributionForProfileFuture(String repoFullName, String userLogin) throws IOException {
+    public Future<JsonObject> getRepoContributionForProfileFuture(String repoFullName, String userLogin) throws IOException {
         return new AsyncResult<>(getRepoContributionForProfile(repoFullName, userLogin));
     }
 
@@ -136,8 +150,6 @@ public class GitHubService {
 //        Thread.sleep(10000);
 //        return null;
 //    }
-
-
 
     private static final String getProfileInfoGraphQLQuery;
     static {
@@ -153,10 +165,10 @@ public class GitHubService {
         getProfileInfoGraphQLQuery = new String(encoded, Charset.defaultCharset());
         System.out.println("Query GitHubService.getProfileInfoGraphQL set successfully!");
     }
-    public JSONObject getProfileInfoGraphQL(String login) throws IOException {
+    public JsonObject getProfileInfoGraphQL(String login) throws IOException {
 
         HttpResponse response;
-        JSONParser parser = new JSONParser();
+        JsonParser parser = new JsonParser();
         CloseableHttpClient httpclient = HttpClients.createDefault();
 
         HttpPost postRequest = new HttpPost("https://api.github.com/graphql");
@@ -164,22 +176,56 @@ public class GitHubService {
         postRequest.addHeader("Authorization", String.format("token %s", token));
 
         try {
-            JSONObject obj = new JSONObject();
-            obj.put("query", String.format(getProfileInfoGraphQLQuery, login));
+            JsonObject obj = new JsonObject();
+            obj.addProperty("query", String.format(getProfileInfoGraphQLQuery, login));
             HttpEntity entity = new StringEntity(obj.toString());
             postRequest.setEntity(entity);
 
             response = httpclient.execute(postRequest);
             String json_string = EntityUtils.toString(response.getEntity());
 
-           JSONObject jsonObject = (JSONObject) parser.parse(json_string);
-           return (JSONObject)((JSONObject)jsonObject.get("data")).get("user");
+           JsonObject jsonObject = parser.parse(json_string).getAsJsonObject();
+           return jsonObject.getAsJsonObject("data");
 
-        } catch (IOException | ParseException | NullPointerException e) {
+        } catch (IOException | NullPointerException e) {
             System.out.println("GraphQL Query ERROR Error !!!");
             e.printStackTrace();
             throw new IOException("GraphQL Query ERROR Error !!!");
         }
     }
+
+
+    public JsonObject getFullCvJSON(String login) throws IOException{
+        JsonObject cv = getProfileInfoGraphQL(login);
+        JsonArray repos = cv.getAsJsonObject("user")
+                .getAsJsonObject("contributedRepositories")
+                .getAsJsonArray("edges");
+
+        Map <String, Future<JsonObject>> futureMap = new HashMap<>(200);
+
+        for (JsonElement repo: repos) {
+            JsonObject obj = repo.getAsJsonObject();
+            String repoName = obj.getAsJsonObject("node").get("name").getAsString();
+            String ownerLogin = obj.getAsJsonObject("node").getAsJsonObject("owner")
+                    .get("login").getAsString();
+
+            futureMap.put(repoName, getRepoContributionForProfileFuture(ownerLogin + "/" + repoName, login));
+        }
+
+        try {
+            for (JsonElement jsonElement: repos) {
+                JsonObject obj = jsonElement.getAsJsonObject();
+                String repoName = obj.getAsJsonObject("node").get("name").getAsString();
+
+                JsonObject contribute = futureMap.get(repoName).get();
+                obj.getAsJsonObject("node").add("contribute", contribute);
+            }
+        } catch (ExecutionException | InterruptedException e) {
+            System.out.println("Concurrency Exception getFullCvJSON() !!!");
+            e.printStackTrace();
+        }
+        return cv;
+    }
+
 
 }

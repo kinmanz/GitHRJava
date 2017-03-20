@@ -13,7 +13,7 @@ import java.util.Properties;
 public class PropertyService {
 
     static private final Properties properties;
-    static private final String pathToFile = "./src/main/java/GitHR/config.properties";
+    static private final String pathToFile = "./src/main/resources/config.properties";
 
     static {
         properties = new Properties();

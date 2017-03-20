@@ -57,6 +57,9 @@
         node {
           id
           name
+          owner {
+            login
+          }
           watchers {
             totalCount
           }
