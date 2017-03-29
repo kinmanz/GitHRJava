@@ -74,7 +74,7 @@ public class Authentication {
         }
 
 
-        model.addAttribute("name", code);
+//        model.addAttribute("name", code);
 
 //        redirect to main page
         return "redirect:/";

@@ -28,6 +28,10 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+    <script src='js/githr-jquery.js'></script>
+
 </head>
 
 <body>
@@ -43,7 +47,19 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand topnav" href="#">Start Bootstrap</a>
+
+                <div th:if="${service.getToken()} != null">
+                <div id="top-user-info">
+                    <h4>
+                        <a th:href="${authuser.get('html_url')}">
+                            <div>
+                            <img th:src="${authuser.get('avatar_url')}" alt="..." class="img-rounded" width="35">
+                                <span th:text="${authuser.get('login')}"></span>
+                            </div>
+                        </a>
+                    </h4>
+                </div>
+                </div>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -72,20 +88,39 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="intro-message">
-                        <h1>Git Face</h1>
-                        <h3>We do analyze for you</h3>
-                        <h4>
-                          We absolutly integrated into github, so you should sign in by GitHub.
-                        </h4>
-                        <hr class="intro-divider">
-                        <ul class="list-inline intro-social-buttons">
-                          <li>
-                              <a href="https://github.com/IronSummitMedia/startbootstrap" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Sigh up Github</span></a>
-                          </li>
-                            <li>
-                                <a href="https://github.com/IronSummitMedia/startbootstrap" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Sigh in Github</span></a>
-                            </li>
-                        </ul>
+                        <div id="intro_signin">
+                            <h1>Git Face</h1>
+                            <h3>We do analyze for you</h3>
+                            <h4>
+                              We absolutly integrated into github, so you should sign in by GitHub.
+                            </h4>
+                            <hr class="intro-divider">
+                            <ul class="list-inline intro-social-buttons">
+                              <li>
+                                  <a href="https://github.com/login/oauth/authorize?scope=user%20public_repo%20repo%20repo_deployment%20repo:status%20read:repo_hook%20read:org%20read:public_key%20read:gpg_key&client_id=e367ac8d3b8fea3451b4" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i>
+                                      <span class="network-name">Sigh in Github</span>
+                                  </a>
+                              </li>
+                                <!--<li>-->
+                                    <!--<a href="https://github.com/login/oauth/authorize?scope=user%20public_repo%20repo%20repo_deployment%20repo:status%20read:repo_hook%20read:org%20read:public_key%20read:gpg_key&client_id=e367ac8d3b8fea3451b4" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i>-->
+                                        <!--<span class="network-name">Sigh up Github</span>-->
+                                    <!--</a>-->
+                                <!--</li>-->
+                            </ul>
+                        </div>
+                        <div id="intro_search" style="display: none">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <h3>Put profile login.</h3>
+                                    <div class="input-group">
+                                        <input id="intro_search_input" type="text" class="form-control" placeholder="Profile login ...">
+                                        <span class="input-group-btn">
+                                         <button id="intro_search_button" class="btn btn-default" type="button">Search</button>
+                                        </span>
+                                    </div><!-- /input-group -->
+                                </div><!-- /.col-lg-6 -->
+                            </div><!-- /.row -->
+                        </div>
                     </div>
                 </div>
             </div>
@@ -110,7 +145,7 @@
                     <p class="lead">A special thanks to <a target="_blank" href="http://join.deathtothestockphoto.com/">Death to the Stock Photo</a> for providing the photographs that you see in this template. Visit their website to become a member.</p>
                 </div>
                 <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-                    <img class="img-responsive" src="img/ipad.png" alt="">
+                    <img class="img-responsive" src="img/github-logo.jpg" alt="">
                 </div>
             </div>
 
@@ -120,49 +155,49 @@
     </div>
     <!-- /.content-section-a -->
 
-    <div class="content-section-b">
+    <!--<div class="content-section-b">-->
 
-        <div class="container">
+        <!--<div class="container">-->
 
-            <div class="row">
-                <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
-                    <hr class="section-heading-spacer">
-                    <div class="clearfix"></div>
-                    <h2 class="section-heading">3D Device Mockups<br>by PSDCovers</h2>
-                    <p class="lead">Turn your 2D designs into high quality, 3D product shots in seconds using free Photoshop actions by <a target="_blank" href="http://www.psdcovers.com/">PSDCovers</a>! Visit their website to download some of their awesome, free photoshop actions!</p>
-                </div>
-                <div class="col-lg-5 col-sm-pull-6  col-sm-6">
-                    <img class="img-responsive" src="img/dog.png" alt="">
-                </div>
-            </div>
+            <!--<div class="row">-->
+                <!--<div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">-->
+                    <!--<hr class="section-heading-spacer">-->
+                    <!--<div class="clearfix"></div>-->
+                    <!--<h2 class="section-heading">3D Device Mockups<br>by PSDCovers</h2>-->
+                    <!--<p class="lead">Turn your 2D designs into high quality, 3D product shots in seconds using free Photoshop actions by <a target="_blank" href="http://www.psdcovers.com/">PSDCovers</a>! Visit their website to download some of their awesome, free photoshop actions!</p>-->
+                <!--</div>-->
+                <!--<div class="col-lg-5 col-sm-pull-6  col-sm-6">-->
+                    <!--<img class="img-responsive" src="img/dog.png" alt="">-->
+                <!--</div>-->
+            <!--</div>-->
 
-        </div>
-        <!-- /.container -->
+        <!--</div>-->
+        <!--&lt;!&ndash; /.container &ndash;&gt;-->
 
-    </div>
-    <!-- /.content-section-b -->
+    <!--</div>-->
+    <!--&lt;!&ndash; /.content-section-b &ndash;&gt;-->
 
-    <div class="content-section-a">
+    <!--<div class="content-section-a">-->
 
-        <div class="container">
+        <!--<div class="container">-->
 
-            <div class="row">
-                <div class="col-lg-5 col-sm-6">
-                    <hr class="section-heading-spacer">
-                    <div class="clearfix"></div>
-                    <h2 class="section-heading">Google Web Fonts and<br>Font Awesome Icons</h2>
-                    <p class="lead">This template features the 'Lato' font, part of the <a target="_blank" href="http://www.google.com/fonts">Google Web Font library</a>, as well as <a target="_blank" href="http://fontawesome.io">icons from Font Awesome</a>.</p>
-                </div>
-                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-                    <img class="img-responsive" src="img/phones.png" alt="">
-                </div>
-            </div>
+            <!--<div class="row">-->
+                <!--<div class="col-lg-5 col-sm-6">-->
+                    <!--<hr class="section-heading-spacer">-->
+                    <!--<div class="clearfix"></div>-->
+                    <!--<h2 class="section-heading">Google Web Fonts and<br>Font Awesome Icons</h2>-->
+                    <!--<p class="lead">This template features the 'Lato' font, part of the <a target="_blank" href="http://www.google.com/fonts">Google Web Font library</a>, as well as <a target="_blank" href="http://fontawesome.io">icons from Font Awesome</a>.</p>-->
+                <!--</div>-->
+                <!--<div class="col-lg-5 col-lg-offset-2 col-sm-6">-->
+                    <!--<img class="img-responsive" src="img/phones.png" alt="">-->
+                <!--</div>-->
+            <!--</div>-->
 
-        </div>
-        <!-- /.container -->
+        <!--</div>-->
+        <!--&lt;!&ndash; /.container &ndash;&gt;-->
 
-    </div>
-    <!-- /.content-section-a -->
+    <!--</div>-->
+    <!--&lt;!&ndash; /.content-section-a &ndash;&gt;-->
 
 	<a  name="contact"></a>
     <div class="banner">

@@ -10,7 +10,7 @@ import java.util.concurrent.atomic.AtomicLong;
 
 //@RequestMapping(method=GET)
 @RestController
-@RequestMapping("/api")
+@RequestMapping("/api/test")
 public class HelloController {
 
     private static final String template = "Hello, %s!";

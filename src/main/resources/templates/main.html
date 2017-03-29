@@ -13,7 +13,9 @@
 <!--<p th:text="'Hello, ' + ${name} + '!'" />-->
 <!--<p th:text="'Properties, ' + ${properties} + '!'" />-->
 <!--<p th:text="'Your session: ' + ${session_info} + '!'" />-->
-<!--<p  th:text="${#current_user.get('login')}"/>-->
+<p  th:text="${ssession.isNew()}"/>
+<p  th:text="${ssession.getId()}"/>
+<p  th:text="${ssession.getAttribute('check')}"/>
 
 <p  th:text="'Id:' + (${current_user != null} ? ${current_user.get('id')} : 'null value!')"/>
 <p  th:text="'Login: ' + (${current_user != null} ? ${current_user.get('login')} : 'null value!')"/>

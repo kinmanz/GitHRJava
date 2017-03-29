@@ -1,5 +1,6 @@
 package GitHR.ControllersMVC;
 
+import GitHR.Entities.JSONCuteStringsObj;
 import GitHR.Services.GitHubService;
 import GitHR.Services.PropertyService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,6 +15,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
+import java.util.concurrent.atomic.AtomicInteger;
 
 @Controller
 @RequestMapping("/")
@@ -21,6 +23,7 @@ class MainController {
 
     private final PropertyService propertyService;
     private final GitHubService gitHubService;
+    private final AtomicInteger atomicInteger = new AtomicInteger(1);
 
 
     @Autowired
@@ -33,27 +36,29 @@ class MainController {
     public String mainPage(HttpSession session,
                            @RequestParam(value="name", required=false, defaultValue="World") String name,
                            Model model) throws Exception{
-        model.addAttribute("name", name);
-        model.addAttribute("properties", propertyService.getProperties().stringPropertyNames());
-        model.addAttribute("client_id", propertyService.getProperties().getProperty("client_id"));
-        model.addAttribute("session_info", gitHubService.getToken() + " --- " + session.getAttribute("token"));
-        model.addAttribute("token", gitHubService.getToken() + " --- " + session.getAttribute("token"));
 
+        model.addAttribute("service", gitHubService);
+        model.addAttribute("authuser", new JSONCuteStringsObj(gitHubService.getAuthenticatedUser()));
 
-        if (gitHubService.tokenIsSet()) {
-            model.addAttribute("current_user", gitHubService.getAuthenticatedUser());
-        }
+        session.setAttribute("check", gitHubService.getToken());
+
+        model.addAttribute("ssession", session);
+
+//        return "main";
         return "styled/index";
     }
 
     @GetMapping("/{nick}")
     public String parsePage(HttpSession session,
                             @PathVariable String nick,
-                            Model model) {
-        model.addAttribute("name", nick);
-        model.addAttribute("session_info", gitHubService.getToken());
+                            Model model) throws Exception {
 
-        return "CV";
+        model.addAttribute("service", gitHubService);
+        model.addAttribute("nick", nick);
+        model.addAttribute("authuser", new JSONCuteStringsObj(gitHubService.getAuthenticatedUser()));
+//        model.addAttribute("targetuser", new JSONCuteStringsObj(gitHubService.getFullCvJSON("")));
+
+        return "styled/cv";
     }
 
 }
