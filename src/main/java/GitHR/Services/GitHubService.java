@@ -16,7 +16,10 @@ import org.springframework.scheduling.annotation.Async;
 import org.springframework.scheduling.annotation.AsyncResult;
 import org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor;
 import org.springframework.stereotype.Service;
+import org.springframework.web.context.request.RequestContextHolder;
+import org.springframework.web.context.request.ServletRequestAttributes;
 
+import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.nio.charset.Charset;
 import java.nio.file.Files;
@@ -34,6 +37,22 @@ public class GitHubService {
     @Autowired
     public GitHubService (ThreadPoolTaskExecutor threadPoolTaskExecutor) {
         this.threadPoolTaskExecutor = threadPoolTaskExecutor;
+
+    // If was a restart of application, all beans are died, so we need to reconstruct them
+        Object tokenInSession = getSession().getAttribute("token");
+        if (!tokenIsSet() && tokenInSession != null) {
+//         but session has token inside
+           setToken((String) tokenInSession);
+        }
+    }
+
+//    It can be done just by using @Autowired HttpSession httpSession
+//    (put as additional parameter in constructor)
+//    but because of testing, I have decided to choose way bellow
+    public static HttpSession getSession() {
+//        Return the RequestAttributes currently bound to the thread.
+        ServletRequestAttributes attr = (ServletRequestAttributes) RequestContextHolder.currentRequestAttributes();
+        return attr.getRequest().getSession(); // true == allow create
     }
 
     private String token = null;
