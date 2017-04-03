@@ -1,6 +1,7 @@
 package GitHR.Services;
 
 import com.google.gson.*;
+import com.google.gson.stream.JsonReader;
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.methods.HttpGet;
@@ -20,6 +21,7 @@ import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
 
 import javax.servlet.http.HttpSession;
+import java.io.FileReader;
 import java.io.IOException;
 import java.nio.charset.Charset;
 import java.nio.file.Files;
@@ -34,15 +36,19 @@ import static java.lang.System.exit;
 @Scope(value="session", proxyMode = ScopedProxyMode.TARGET_CLASS)
 public class GitHubService {
 
+    public static boolean TESTED = false;
+
     @Autowired
     public GitHubService (ThreadPoolTaskExecutor threadPoolTaskExecutor) {
         this.threadPoolTaskExecutor = threadPoolTaskExecutor;
 
-    // If was a restart of application, all beans are died, so we need to reconstruct them
-        Object tokenInSession = getSession().getAttribute("token");
-        if (!tokenIsSet() && tokenInSession != null) {
+        if (!TESTED) {
+            // If was a restart of application, all beans are died, so we need to reconstruct them
+            Object tokenInSession = getSession().getAttribute("token");
+            if (!tokenIsSet() && tokenInSession != null) {
 //         but session has token inside
-           setToken((String) tokenInSession);
+                setToken((String) tokenInSession);
+            }
         }
     }
 
@@ -208,6 +214,14 @@ public class GitHubService {
         }
     }
 
+    public JsonObject getFullCvJSONMock(String login) throws IOException{
+        Gson gson = new GsonBuilder().setPrettyPrinting().create();
+        JsonReader reader = new JsonReader(
+                new FileReader("./src/main/resources/queryMocks/getFullCvJSON.json"));
+        JsonParser parser = new JsonParser();
+        JsonElement jsonElement = parser.parse(reader);
+        return jsonElement.getAsJsonObject();
+    }
 
     public JsonObject getFullCvJSON(String login) throws IOException{
         JsonObject cv = getProfileInfoGraphQL(login);
@@ -232,6 +246,30 @@ public class GitHubService {
                 String repoName = obj.getAsJsonObject("node").get("name").getAsString();
 
                 JsonObject contribute = futureMap.get(repoName).get();
+
+//                comment the if you need weekly information
+                if (contribute != null) {
+                    JsonArray weeks = contribute.getAsJsonArray("weeks");
+
+                    long w = 0, a = 0, d = 0, c = 0;
+                    for (JsonElement week : weeks) {
+                        JsonObject weekObj = week.getAsJsonObject();
+                        a += weekObj.get("a").getAsLong();
+                        d += weekObj.get("d").getAsLong();
+                        c += weekObj.get("c").getAsLong();
+                    }
+//                    week when committing start
+                    w = weeks.get(0).getAsJsonObject().get("w").getAsLong();
+
+                    JsonObject contributeSummary = new JsonObject();
+                    contributeSummary.addProperty("w", w);
+                    contributeSummary.addProperty("a", a);
+                    contributeSummary.addProperty("d", d);
+                    contributeSummary.addProperty("c", c);
+
+                    contribute = contributeSummary;
+                }
+
                 obj.getAsJsonObject("node").add("contribute", contribute);
             }
         } catch (ExecutionException | InterruptedException e) {

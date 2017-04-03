@@ -48,6 +48,15 @@ class MainController {
         return "styled/index";
     }
 
+    @GetMapping("/test/test")
+    public String testPage(HttpSession session,
+                            Model model) throws Exception {
+
+        model.addAttribute("token", gitHubService.getToken());
+
+        return "test";
+    }
+
     @GetMapping("/{nick}")
     public String parsePage(HttpSession session,
                             @PathVariable String nick,

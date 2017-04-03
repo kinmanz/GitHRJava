@@ -1,0 +1,734 @@
+{
+  "viewer": {
+    "avatarURL": "https://avatars3.githubusercontent.com/u/15079022?v\u003d3",
+    "login": "kinmanz",
+    "url": "https://github.com/kinmanz"
+  },
+  "user": {
+    "pinnedRepositories": {
+      "totalCount": 3,
+      "nodes": [
+        {
+          "name": "hpcourse"
+        },
+        {
+          "name": "per2016summer"
+        },
+        {
+          "name": "TRUtermWork"
+        }
+      ]
+    },
+    "id": "MDQ6VXNlcjkzMzgyMzg\u003d",
+    "avatarURL": "https://avatars0.githubusercontent.com/u/9338238?v\u003d3",
+    "login": "ALEXSSS",
+    "followers": {
+      "totalCount": 1
+    },
+    "following": {
+      "totalCount": 1
+    },
+    "starredRepositories": {
+      "totalCount": 0
+    },
+    "watching": {
+      "totalCount": 14
+    },
+    "pullRequests": {
+      "totalCount": 9
+    },
+    "gists": {
+      "totalCount": 0
+    },
+    "email": "",
+    "organizations": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "contributedRepositories": {
+      "totalCount": 10,
+      "pageInfo": {
+        "endCursor": "Y3Vyc29yOjgwNjEyNTg1",
+        "hasNextPage": false
+      },
+      "edges": [
+        {
+          "node": {
+            "id": "MDEwOlJlcG9zaXRvcnk0MjM4OTc3",
+            "name": "springfox",
+            "owner": {
+              "login": "springfox"
+            },
+            "watchers": {
+              "totalCount": 135
+            },
+            "forks": {
+              "totalCount": 581
+            },
+            "stargazers": {
+              "totalCount": 1595
+            },
+            "isFork": false,
+            "description": "Automated JSON API documentation for API\u0027s built with Spring",
+            "homepageURL": "http://springfox.io",
+            "createdAt": "2012-05-06T06:38:57Z",
+            "updatedAt": "2017-04-03T14:17:43Z",
+            "primaryLanguage": {
+              "color": "#e69f56",
+              "id": "MDg6TGFuZ3VhZ2UxNzU\u003d",
+              "name": "Groovy"
+            },
+            "languages": {
+              "edges": [
+                {
+                  "size": 126476,
+                  "node": {
+                    "name": "Groovy",
+                    "id": "MDg6TGFuZ3VhZ2UxNzU\u003d",
+                    "color": "#e69f56"
+                  }
+                },
+                {
+                  "size": 93843,
+                  "node": {
+                    "name": "Java",
+                    "id": "MDg6TGFuZ3VhZ2UxNTg\u003d",
+                    "color": "#b07219"
+                  }
+                },
+                {
+                  "size": 3246,
+                  "node": {
+                    "name": "HTML",
+                    "id": "MDg6TGFuZ3VhZ2U0MTc\u003d",
+                    "color": "#e34c26"
+                  }
+                },
+                {
+                  "size": 4475,
+                  "node": {
+                    "name": "JavaScript",
+                    "id": "MDg6TGFuZ3VhZ2UxNDA\u003d",
+                    "color": "#f1e05a"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "node": {
+            "id": "MDEwOlJlcG9zaXRvcnkzNDMzOTIxNg\u003d\u003d",
+            "name": "hpcourse",
+            "owner": {
+              "login": "cscenter"
+            },
+            "watchers": {
+              "totalCount": 23
+            },
+            "forks": {
+              "totalCount": 87
+            },
+            "stargazers": {
+              "totalCount": 1
+            },
+            "isFork": false,
+            "description": "Project is aimed to store student\u0027s practical works on high performance computing course",
+            "createdAt": "2015-04-21T16:36:38Z",
+            "updatedAt": "2017-03-04T16:10:41Z",
+            "primaryLanguage": {
+              "color": "#b07219",
+              "id": "MDg6TGFuZ3VhZ2UxNTg\u003d",
+              "name": "Java"
+            },
+            "languages": {
+              "edges": [
+                {
+                  "size": 2067896,
+                  "node": {
+                    "name": "Java",
+                    "id": "MDg6TGFuZ3VhZ2UxNTg\u003d",
+                    "color": "#b07219"
+                  }
+                },
+                {
+                  "size": 45144,
+                  "node": {
+                    "name": "Kotlin",
+                    "id": "MDg6TGFuZ3VhZ2UyNzI\u003d",
+                    "color": "#F18E33"
+                  }
+                },
+                {
+                  "size": 9678,
+                  "node": {
+                    "name": "CMake",
+                    "id": "MDg6TGFuZ3VhZ2U0NDA\u003d"
+                  }
+                },
+                {
+                  "size": 283707,
+                  "node": {
+                    "name": "C++",
+                    "id": "MDg6TGFuZ3VhZ2UxNDI\u003d",
+                    "color": "#f34b7d"
+                  }
+                },
+                {
+                  "size": 1502,
+                  "node": {
+                    "name": "Python",
+                    "id": "MDg6TGFuZ3VhZ2UxNDU\u003d",
+                    "color": "#3572A5"
+                  }
+                },
+                {
+                  "size": 20062,
+                  "node": {
+                    "name": "C#",
+                    "id": "MDg6TGFuZ3VhZ2UyMzI\u003d",
+                    "color": "#178600"
+                  }
+                },
+                {
+                  "size": 55432,
+                  "node": {
+                    "name": "Protocol Buffer",
+                    "id": "MDg6TGFuZ3VhZ2U0MjQ\u003d"
+                  }
+                },
+                {
+                  "size": 560,
+                  "node": {
+                    "name": "C",
+                    "id": "MDg6TGFuZ3VhZ2UxNDk\u003d",
+                    "color": "#555555"
+                  }
+                },
+                {
+                  "size": 97,
+                  "node": {
+                    "name": "HTML",
+                    "id": "MDg6TGFuZ3VhZ2U0MTc\u003d",
+                    "color": "#e34c26"
+                  }
+                },
+                {
+                  "size": 437,
+                  "node": {
+                    "name": "Batchfile",
+                    "id": "MDg6TGFuZ3VhZ2U0NjM\u003d",
+                    "color": "#C1F12E"
+                  }
+                },
+                {
+                  "size": 4293,
+                  "node": {
+                    "name": "Makefile",
+                    "id": "MDg6TGFuZ3VhZ2U0MDM\u003d",
+                    "color": "#427819"
+                  }
+                },
+                {
+                  "size": 7434,
+                  "node": {
+                    "name": "Groovy",
+                    "id": "MDg6TGFuZ3VhZ2UxNzU\u003d",
+                    "color": "#e69f56"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "node": {
+            "id": "MDEwOlJlcG9zaXRvcnkzOTI5NjY0NA\u003d\u003d",
+            "name": "store_of_my_project1",
+            "owner": {
+              "login": "ALEXSSS"
+            },
+            "watchers": {
+              "totalCount": 1
+            },
+            "forks": {
+              "totalCount": 0
+            },
+            "stargazers": {
+              "totalCount": 0
+            },
+            "isFork": false,
+            "description": "store_of_my_project1",
+            "createdAt": "2015-07-18T11:49:16Z",
+            "updatedAt": "2016-04-30T15:30:02Z",
+            "primaryLanguage": {
+              "color": "#178600",
+              "id": "MDg6TGFuZ3VhZ2UyMzI\u003d",
+              "name": "C#"
+            },
+            "languages": {
+              "edges": [
+                {
+                  "size": 2448,
+                  "node": {
+                    "name": "PHP",
+                    "id": "MDg6TGFuZ3VhZ2UxNTE\u003d",
+                    "color": "#4F5D95"
+                  }
+                },
+                {
+                  "size": 192627,
+                  "node": {
+                    "name": "Makefile",
+                    "id": "MDg6TGFuZ3VhZ2U0MDM\u003d",
+                    "color": "#427819"
+                  }
+                },
+                {
+                  "size": 39650,
+                  "node": {
+                    "name": "C",
+                    "id": "MDg6TGFuZ3VhZ2UxNDk\u003d",
+                    "color": "#555555"
+                  }
+                },
+                {
+                  "size": 43560,
+                  "node": {
+                    "name": "Shell",
+                    "id": "MDg6TGFuZ3VhZ2UxMzk\u003d",
+                    "color": "#89e051"
+                  }
+                },
+                {
+                  "size": 269728,
+                  "node": {
+                    "name": "C#",
+                    "id": "MDg6TGFuZ3VhZ2UyMzI\u003d",
+                    "color": "#178600"
+                  }
+                },
+                {
+                  "size": 52832,
+                  "node": {
+                    "name": "Java",
+                    "id": "MDg6TGFuZ3VhZ2UxNTg\u003d",
+                    "color": "#b07219"
+                  }
+                }
+              ]
+            },
+            "contribute": {
+              "w": 133212643200,
+              "a": 36725,
+              "d": 1,
+              "c": 3
+            }
+          }
+        },
+        {
+          "node": {
+            "id": "MDEwOlJlcG9zaXRvcnk1MjIyMDYxNQ\u003d\u003d",
+            "name": "dev",
+            "owner": {
+              "login": "W6-Assess"
+            },
+            "watchers": {
+              "totalCount": 5
+            },
+            "forks": {
+              "totalCount": 8
+            },
+            "stargazers": {
+              "totalCount": 0
+            },
+            "isFork": false,
+            "createdAt": "2016-02-21T18:19:48Z",
+            "updatedAt": "2016-02-21T18:22:15Z",
+            "primaryLanguage": {
+              "color": "#b07219",
+              "id": "MDg6TGFuZ3VhZ2UxNTg\u003d",
+              "name": "Java"
+            },
+            "languages": {
+              "edges": [
+                {
+                  "size": 70641,
+                  "node": {
+                    "name": "Java",
+                    "id": "MDg6TGFuZ3VhZ2UxNTg\u003d",
+                    "color": "#b07219"
+                  }
+                },
+                {
+                  "size": 834,
+                  "node": {
+                    "name": "CSS",
+                    "id": "MDg6TGFuZ3VhZ2UzMDg\u003d",
+                    "color": "#563d7c"
+                  }
+                },
+                {
+                  "size": 2936,
+                  "node": {
+                    "name": "JavaScript",
+                    "id": "MDg6TGFuZ3VhZ2UxNDA\u003d",
+                    "color": "#f1e05a"
+                  }
+                },
+                {
+                  "size": 58628,
+                  "node": {
+                    "name": "HTML",
+                    "id": "MDg6TGFuZ3VhZ2U0MTc\u003d",
+                    "color": "#e34c26"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "node": {
+            "id": "MDEwOlJlcG9zaXRvcnk1NzQ0ODQ0NA\u003d\u003d",
+            "name": "EMT",
+            "owner": {
+              "login": "ALEXSSS"
+            },
+            "watchers": {
+              "totalCount": 1
+            },
+            "forks": {
+              "totalCount": 0
+            },
+            "stargazers": {
+              "totalCount": 0
+            },
+            "isFork": false,
+            "description": "Code of course work",
+            "createdAt": "2016-04-30T15:16:47Z",
+            "updatedAt": "2016-04-30T15:25:19Z",
+            "primaryLanguage": {
+              "color": "#3572A5",
+              "id": "MDg6TGFuZ3VhZ2UxNDU\u003d",
+              "name": "Python"
+            },
+            "languages": {
+              "edges": [
+                {
+                  "size": 37591,
+                  "node": {
+                    "name": "Python",
+                    "id": "MDg6TGFuZ3VhZ2UxNDU\u003d",
+                    "color": "#3572A5"
+                  }
+                }
+              ]
+            },
+            "contribute": {
+              "w": 73813680000,
+              "a": 5,
+              "d": 1,
+              "c": 3
+            }
+          }
+        },
+        {
+          "node": {
+            "id": "MDEwOlJlcG9zaXRvcnk1OTk2NTk0OA\u003d\u003d",
+            "name": "exampleOfJettyAuthorization",
+            "owner": {
+              "login": "ALEXSSS"
+            },
+            "watchers": {
+              "totalCount": 1
+            },
+            "forks": {
+              "totalCount": 0
+            },
+            "stargazers": {
+              "totalCount": 0
+            },
+            "isFork": false,
+            "description": "some examples ",
+            "createdAt": "2016-05-29T22:09:38Z",
+            "updatedAt": "2016-05-29T22:18:10Z",
+            "primaryLanguage": {
+              "color": "#b07219",
+              "id": "MDg6TGFuZ3VhZ2UxNTg\u003d",
+              "name": "Java"
+            },
+            "languages": {
+              "edges": [
+                {
+                  "size": 354,
+                  "node": {
+                    "name": "HTML",
+                    "id": "MDg6TGFuZ3VhZ2U0MTc\u003d",
+                    "color": "#e34c26"
+                  }
+                },
+                {
+                  "size": 20490,
+                  "node": {
+                    "name": "Java",
+                    "id": "MDg6TGFuZ3VhZ2UxNTg\u003d",
+                    "color": "#b07219"
+                  }
+                }
+              ]
+            },
+            "contribute": {
+              "w": 66500352000,
+              "a": 4,
+              "d": 1,
+              "c": 2
+            }
+          }
+        },
+        {
+          "node": {
+            "id": "MDEwOlJlcG9zaXRvcnk2NzQyMDM4MA\u003d\u003d",
+            "name": "per2016summer",
+            "owner": {
+              "login": "ALEXSSS"
+            },
+            "watchers": {
+              "totalCount": 1
+            },
+            "forks": {
+              "totalCount": 0
+            },
+            "stargazers": {
+              "totalCount": 0
+            },
+            "isFork": false,
+            "description": "my some work per summer 2016",
+            "createdAt": "2016-09-05T12:49:03Z",
+            "updatedAt": "2016-09-05T13:14:41Z",
+            "primaryLanguage": {
+              "color": "#b07219",
+              "id": "MDg6TGFuZ3VhZ2UxNTg\u003d",
+              "name": "Java"
+            },
+            "languages": {
+              "edges": [
+                {
+                  "size": 88336,
+                  "node": {
+                    "name": "Java",
+                    "id": "MDg6TGFuZ3VhZ2UxNTg\u003d",
+                    "color": "#b07219"
+                  }
+                },
+                {
+                  "size": 277,
+                  "node": {
+                    "name": "CSS",
+                    "id": "MDg6TGFuZ3VhZ2UzMDg\u003d",
+                    "color": "#563d7c"
+                  }
+                }
+              ]
+            },
+            "contribute": {
+              "w": 45942595200,
+              "a": 1,
+              "d": 0,
+              "c": 1
+            }
+          }
+        },
+        {
+          "node": {
+            "id": "MDEwOlJlcG9zaXRvcnk2ODA3ODI2OQ\u003d\u003d",
+            "name": "csc-os-fall-2016",
+            "owner": {
+              "login": "OSLL"
+            },
+            "watchers": {
+              "totalCount": 18
+            },
+            "forks": {
+              "totalCount": 24
+            },
+            "stargazers": {
+              "totalCount": 0
+            },
+            "isFork": false,
+            "description": "OS course fall 2016",
+            "createdAt": "2016-09-13T05:47:36Z",
+            "updatedAt": "2017-04-03T12:34:38Z",
+            "primaryLanguage": {
+              "color": "#555555",
+              "id": "MDg6TGFuZ3VhZ2UxNDk\u003d",
+              "name": "C"
+            },
+            "languages": {
+              "edges": [
+                {
+                  "size": 5799,
+                  "node": {
+                    "name": "Makefile",
+                    "id": "MDg6TGFuZ3VhZ2U0MDM\u003d",
+                    "color": "#427819"
+                  }
+                },
+                {
+                  "size": 167953,
+                  "node": {
+                    "name": "C",
+                    "id": "MDg6TGFuZ3VhZ2UxNDk\u003d",
+                    "color": "#555555"
+                  }
+                },
+                {
+                  "size": 1301,
+                  "node": {
+                    "name": "Shell",
+                    "id": "MDg6TGFuZ3VhZ2UxMzk\u003d",
+                    "color": "#89e051"
+                  }
+                },
+                {
+                  "size": 29154,
+                  "node": {
+                    "name": "Assembly",
+                    "id": "MDg6TGFuZ3VhZ2UyMzY\u003d",
+                    "color": "#6E4C13"
+                  }
+                }
+              ]
+            },
+            "contribute": {
+              "w": 44469648000,
+              "a": 1231,
+              "d": 648,
+              "c": 12
+            }
+          }
+        },
+        {
+          "node": {
+            "id": "MDEwOlJlcG9zaXRvcnk3MTE3MzE1MA\u003d\u003d",
+            "name": "GitHR",
+            "owner": {
+              "login": "ALEXSSS"
+            },
+            "watchers": {
+              "totalCount": 3
+            },
+            "forks": {
+              "totalCount": 2
+            },
+            "stargazers": {
+              "totalCount": 0
+            },
+            "isFork": false,
+            "createdAt": "2016-10-17T19:23:32Z",
+            "updatedAt": "2016-10-22T18:49:38Z",
+            "primaryLanguage": {
+              "color": "#3572A5",
+              "id": "MDg6TGFuZ3VhZ2UxNDU\u003d",
+              "name": "Python"
+            },
+            "languages": {
+              "edges": [
+                {
+                  "size": 45721,
+                  "node": {
+                    "name": "Python",
+                    "id": "MDg6TGFuZ3VhZ2UxNDU\u003d",
+                    "color": "#3572A5"
+                  }
+                },
+                {
+                  "size": 11721,
+                  "node": {
+                    "name": "HTML",
+                    "id": "MDg6TGFuZ3VhZ2U0MTc\u003d",
+                    "color": "#e34c26"
+                  }
+                },
+                {
+                  "size": 6383,
+                  "node": {
+                    "name": "JavaScript",
+                    "id": "MDg6TGFuZ3VhZ2UxNDA\u003d",
+                    "color": "#f1e05a"
+                  }
+                },
+                {
+                  "size": 6111,
+                  "node": {
+                    "name": "CSS",
+                    "id": "MDg6TGFuZ3VhZ2UzMDg\u003d",
+                    "color": "#563d7c"
+                  }
+                }
+              ]
+            },
+            "contribute": {
+              "w": 37095840000,
+              "a": 146,
+              "d": 7,
+              "c": 4
+            }
+          }
+        },
+        {
+          "node": {
+            "id": "MDEwOlJlcG9zaXRvcnk4MDYxMjU4NQ\u003d\u003d",
+            "name": "djangoexmp",
+            "owner": {
+              "login": "ALEXSSS"
+            },
+            "watchers": {
+              "totalCount": 1
+            },
+            "forks": {
+              "totalCount": 0
+            },
+            "stargazers": {
+              "totalCount": 0
+            },
+            "isFork": false,
+            "createdAt": "2017-02-01T11:08:58Z",
+            "updatedAt": "2017-02-01T11:09:40Z",
+            "primaryLanguage": {
+              "color": "#3572A5",
+              "id": "MDg6TGFuZ3VhZ2UxNDU\u003d",
+              "name": "Python"
+            },
+            "languages": {
+              "edges": [
+                {
+                  "size": 25626,
+                  "node": {
+                    "name": "Python",
+                    "id": "MDg6TGFuZ3VhZ2UxNDU\u003d",
+                    "color": "#3572A5"
+                  }
+                },
+                {
+                  "size": 3450,
+                  "node": {
+                    "name": "HTML",
+                    "id": "MDg6TGFuZ3VhZ2U0MTc\u003d",
+                    "color": "#e34c26"
+                  }
+                }
+              ]
+            },
+            "contribute": {
+              "w": 14883696000,
+              "a": 997,
+              "d": 0,
+              "c": 1
+            }
+          }
+        }
+      ]
+    }
+  }
+}
