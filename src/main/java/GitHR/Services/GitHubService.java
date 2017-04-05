@@ -230,6 +230,7 @@ public class GitHubService {
                 .getAsJsonArray("edges");
 
         Map <String, Future<JsonObject>> futureMap = new HashMap<>(200);
+        Map <String, String> ownerMap = new HashMap<>(200);
 
         for (JsonElement repo: repos) {
             JsonObject obj = repo.getAsJsonObject();
@@ -237,10 +238,29 @@ public class GitHubService {
             String ownerLogin = obj.getAsJsonObject("node").getAsJsonObject("owner")
                     .get("login").getAsString();
 
+            ownerMap.put(repoName, ownerLogin);
             futureMap.put(repoName, getRepoContributionForProfileFuture(ownerLogin + "/" + repoName, login));
         }
 
         try {
+
+            List<String> repeatedNames = new LinkedList<>();
+            for (Map.Entry<String, Future<JsonObject>> entry: futureMap.entrySet()) {
+                JsonObject res =  entry.getValue().get();
+
+                if (res == null)
+                    repeatedNames.add(entry.getKey());
+            }
+
+            Thread.sleep(2000);
+
+//            repeat request
+            for (String repoName : repeatedNames) {
+                futureMap.put(repoName,
+                        getRepoContributionForProfileFuture(ownerMap.get(repoName) + "/" + repoName, login));
+            }
+
+
             for (JsonElement jsonElement: repos) {
                 JsonObject obj = jsonElement.getAsJsonObject();
                 String repoName = obj.getAsJsonObject("node").get("name").getAsString();
@@ -268,9 +288,8 @@ public class GitHubService {
                     contributeSummary.addProperty("c", c);
 
                     contribute = contributeSummary;
+                    obj.getAsJsonObject("node").add("contribute", contribute);
                 }
-
-                obj.getAsJsonObject("node").add("contribute", contribute);
             }
         } catch (ExecutionException | InterruptedException e) {
             System.out.println("Concurrency Exception getFullCvJSON() !!!");

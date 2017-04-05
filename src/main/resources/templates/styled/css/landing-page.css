@@ -18,11 +18,11 @@ h4,
 h5,
 h6 {
     font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 700;
+    font-weight: 400;
 }
 
 .topnav {
-    font-size: 14px;
+    font-size: 15px;
 }
 
 .lead {
@@ -186,4 +186,10 @@ footer {
 
 p.copyright {
     margin: 15px 0 0;
+}
+
+.page-content-block {
+    border:solid 1px rgba(102,98,102,0.16);
+    background-color:rgba(250,207,255,0.25);
+    border-radius: 5px;
 }

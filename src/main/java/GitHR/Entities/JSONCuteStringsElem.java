@@ -13,6 +13,10 @@ public class JSONCuteStringsElem {
         this.jsonElement = jsonElement;
     }
 
+    public JSONCuteStringsObj getAsJsonObject() {
+        return new JSONCuteStringsObj(jsonElement.getAsJsonObject());
+    }
+
     @Override
     public String toString() {
 //        remove boundary quotes "string" => string

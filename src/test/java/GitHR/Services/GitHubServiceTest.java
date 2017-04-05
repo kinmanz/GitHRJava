@@ -16,7 +16,7 @@ import java.util.concurrent.Future;
 public class GitHubServiceTest {
 
     ThreadPoolTaskExecutor threadPoolTaskExecutor = new ThreadPoolTaskExecutor();
-    Gson gson = new GsonBuilder().setPrettyPrinting().create();
+    Gson gson = new GsonBuilder().setPrettyPrinting().serializeNulls().create();
 
     private GitHubService gitHubService = new GitHubService(threadPoolTaskExecutor);
     private PropertyService propertyService = new PropertyService();
@@ -28,7 +28,7 @@ public class GitHubServiceTest {
 
     @Before
     public void runOnceBeforeInstance() {
-        threadPoolTaskExecutor.setCorePoolSize(5);
+        threadPoolTaskExecutor.setCorePoolSize(7);
         threadPoolTaskExecutor.initialize();
         gitHubService.setToken(propertyService.getProperty("test.token"));
     }
@@ -68,6 +68,7 @@ public class GitHubServiceTest {
     @Test
     public void getFullCvJSON() throws Exception {
         JsonObject jsonObject = gitHubService.getFullCvJSON("ALEXSSS");
+//        JsonObject jsonObject = gitHubService.getFullCvJSON("avgaydashenko");
         System.out.println(gson.toJson(jsonObject));
     }
 

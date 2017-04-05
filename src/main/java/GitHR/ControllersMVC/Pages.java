@@ -3,6 +3,7 @@ package GitHR.ControllersMVC;
 import GitHR.Entities.JSONCuteStringsObj;
 import GitHR.Services.GitHubService;
 import GitHR.Services.PropertyService;
+import com.google.gson.JsonObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
@@ -53,6 +54,7 @@ class MainController {
                             Model model) throws Exception {
 
         model.addAttribute("token", gitHubService.getToken());
+        model.addAttribute("tokenSession", session.getAttribute("token"));
 
         return "test";
     }
@@ -64,7 +66,9 @@ class MainController {
 
         model.addAttribute("service", gitHubService);
         model.addAttribute("nick", nick);
-        model.addAttribute("authuser", new JSONCuteStringsObj(gitHubService.getAuthenticatedUser()));
+        JSONCuteStringsObj cv = new JSONCuteStringsObj(gitHubService.getFullCvJSONMock(nick));
+        model.addAttribute("authuser", cv.getAsJsonObject("viewer"));
+        model.addAttribute("targetuser", cv.getAsJsonObject("user"));
 //        model.addAttribute("targetuser", new JSONCuteStringsObj(gitHubService.getFullCvJSON("")));
 
         return "styled/cv";

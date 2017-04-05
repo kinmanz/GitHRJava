@@ -9,6 +9,25 @@
       totalCount
       nodes {
         name
+        url
+        description
+        forks {
+          totalCount
+        }
+        stargazers {
+          totalCount
+        }
+
+        languages (first:10) {
+          edges{
+            node{
+              name
+            }
+          }
+        }
+
+        isFork
+
       }
     }
     id
@@ -57,6 +76,7 @@
         node {
           id
           name
+          description
           owner {
             login
           }
