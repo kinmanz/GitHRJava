@@ -20,6 +20,7 @@ public class JSONCuteStringsElem {
     @Override
     public String toString() {
 //        remove boundary quotes "string" => string
+        if (jsonElement == null) return "";
         return jsonElement.toString().replaceAll("^\"|\"$", "");
     }
 }

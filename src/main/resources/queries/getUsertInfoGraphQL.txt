@@ -18,9 +18,10 @@
           totalCount
         }
 
-        languages (first:10) {
+        languages (first: 5) {
           edges{
             node{
+              color
               name
             }
           }

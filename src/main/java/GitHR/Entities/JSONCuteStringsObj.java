@@ -4,6 +4,10 @@ import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 
+import java.util.List;
+import java.util.stream.Collectors;
+import java.util.stream.StreamSupport;
+
 public class JSONCuteStringsObj {
 
     private final JsonObject jsonObject;
@@ -21,8 +25,11 @@ public class JSONCuteStringsObj {
         return new JSONCuteStringsObj(jsonObject.getAsJsonObject(memberName));
     }
 
-    public JsonArray getAsJsonArray(String memberName) {
-        return jsonObject.getAsJsonArray(memberName);
+    public List<JSONCuteStringsObj> getAsJsonArray(String memberName) {
+        JsonArray jsonArray = jsonObject.getAsJsonArray(memberName);
+        return StreamSupport.stream(jsonArray.spliterator(), false)
+                .map((jsEl) -> new JSONCuteStringsObj(jsEl.getAsJsonObject()))
+                .collect(Collectors.toList());
     }
 
     /*

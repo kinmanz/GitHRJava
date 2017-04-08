@@ -9,22 +9,142 @@
       "totalCount": 6,
       "nodes": [
         {
-          "name": "d3"
+          "name": "d3",
+          "url": "https://github.com/d3/d3",
+          "description": "Bring data to life with SVG, Canvas and HTML. :bar_chart::chart_with_upwards_trend::tada:",
+          "forks": {
+            "totalCount": 16264
+          },
+          "stargazers": {
+            "totalCount": 62831
+          },
+          "languages": {
+            "edges": [
+              {
+                "node": {
+                  "color": "#f1e05a",
+                  "name": "JavaScript"
+                }
+              }
+            ]
+          },
+          "isFork": false
         },
         {
-          "name": "topojson"
+          "name": "topojson",
+          "url": "https://github.com/topojson/topojson",
+          "description": "An extension of GeoJSON that encodes topology! 🌐",
+          "forks": {
+            "totalCount": 595
+          },
+          "stargazers": {
+            "totalCount": 2798
+          },
+          "languages": {
+            "edges": [
+              {
+                "node": {
+                  "color": "#f1e05a",
+                  "name": "JavaScript"
+                }
+              }
+            ]
+          },
+          "isFork": false
         },
         {
-          "name": "d3-scale"
+          "name": "d3-scale",
+          "url": "https://github.com/d3/d3-scale",
+          "description": "Encodings that map abstract data to visual representation.",
+          "forks": {
+            "totalCount": 93
+          },
+          "stargazers": {
+            "totalCount": 776
+          },
+          "languages": {
+            "edges": [
+              {
+                "node": {
+                  "color": "#f1e05a",
+                  "name": "JavaScript"
+                }
+              }
+            ]
+          },
+          "isFork": false
         },
         {
-          "name": "shapefile"
+          "name": "shapefile",
+          "url": "https://github.com/mbostock/shapefile",
+          "description": "A cross-platform streaming parser for the ESRI Shapefile spatial data format.",
+          "forks": {
+            "totalCount": 59
+          },
+          "stargazers": {
+            "totalCount": 316
+          },
+          "languages": {
+            "edges": [
+              {
+                "node": {
+                  "color": "#f1e05a",
+                  "name": "JavaScript"
+                }
+              }
+            ]
+          },
+          "isFork": false
         },
         {
-          "name": "d3-shape"
+          "name": "d3-shape",
+          "url": "https://github.com/d3/d3-shape",
+          "description": "Graphical primitives for visualization, such as lines and areas.",
+          "forks": {
+            "totalCount": 98
+          },
+          "stargazers": {
+            "totalCount": 1368
+          },
+          "languages": {
+            "edges": [
+              {
+                "node": {
+                  "color": "#f1e05a",
+                  "name": "JavaScript"
+                }
+              }
+            ]
+          },
+          "isFork": false
         },
         {
-          "name": "d3-geo-projection"
+          "name": "d3-geo-projection",
+          "url": "https://github.com/d3/d3-geo-projection",
+          "description": "Extended geographic projections for d3-geo.",
+          "forks": {
+            "totalCount": 103
+          },
+          "stargazers": {
+            "totalCount": 489
+          },
+          "languages": {
+            "edges": [
+              {
+                "node": {
+                  "color": "#f1e05a",
+                  "name": "JavaScript"
+                }
+              },
+              {
+                "node": {
+                  "color": "#89e051",
+                  "name": "Shell"
+                }
+              }
+            ]
+          },
+          "isFork": false
         }
       ]
     },
@@ -34,7 +154,7 @@
     "login": "mbostock",
     "location": "San Francisco, CA",
     "followers": {
-      "totalCount": 14722
+      "totalCount": 14738
     },
     "following": {
       "totalCount": 13
@@ -46,15 +166,15 @@
       "totalCount": 115
     },
     "pullRequests": {
-      "totalCount": 390
+      "totalCount": 391
     },
     "gists": {
-      "totalCount": 1018
+      "totalCount": 1023
     },
     "company": "",
     "email": "mike@ocks.org",
     "websiteURL": "http://bost.ocks.org",
-    "bio": "I design tools for humans. Creator of @d3. Former @nytgraphics editor. I design tools for humans. Creator of @d3. Former @nytgraphics editor. I design tools for humans. Creator of @d3. Former @nytgraphics editor.",
+    "bio": "I design tools for humans. Creator of @d3. Former @nytgraphics editor.",
     "organizations": {
       "totalCount": 3,
       "nodes": [
@@ -89,6 +209,7 @@
           "node": {
             "id": "MDEwOlJlcG9zaXRvcnk1Nzk3Nzc\u003d",
             "name": "protovis",
+            "description": "A visualization toolkit for JavaScript using SVG.",
             "owner": {
               "login": "mbostock"
             },
@@ -102,7 +223,6 @@
               "totalCount": 591
             },
             "isFork": false,
-            "description": "A visualization toolkit for JavaScript using SVG.",
             "homepageURL": "http://protovis.org",
             "createdAt": "2010-03-25T22:06:52Z",
             "updatedAt": "2017-03-27T14:38:16Z",
@@ -143,23 +263,23 @@
           "node": {
             "id": "MDEwOlJlcG9zaXRvcnk5NDMxNDk\u003d",
             "name": "d3",
+            "description": "Bring data to life with SVG, Canvas and HTML. :bar_chart::chart_with_upwards_trend::tada:",
             "owner": {
               "login": "d3"
             },
             "watchers": {
-              "totalCount": 3132
+              "totalCount": 3146
             },
             "forks": {
-              "totalCount": 16232
+              "totalCount": 16264
             },
             "stargazers": {
-              "totalCount": 62689
+              "totalCount": 62831
             },
             "isFork": false,
-            "description": "Bring data to life with SVG, Canvas and HTML. :bar_chart::chart_with_upwards_trend::tada:",
             "homepageURL": "https://d3js.org",
             "createdAt": "2010-09-27T17:22:42Z",
-            "updatedAt": "2017-04-05T13:52:47Z",
+            "updatedAt": "2017-04-08T13:26:03Z",
             "primaryLanguage": {
               "color": "#f1e05a",
               "id": "MDg6TGFuZ3VhZ2UxNDA\u003d",
@@ -189,6 +309,7 @@
           "node": {
             "id": "MDEwOlJlcG9zaXRvcnkzMjkzNzI5",
             "name": "d3-queue",
+            "description": "Evaluate asynchronous tasks with configurable concurrency.",
             "owner": {
               "login": "d3"
             },
@@ -199,13 +320,12 @@
               "totalCount": 122
             },
             "stargazers": {
-              "totalCount": 1301
+              "totalCount": 1302
             },
             "isFork": false,
-            "description": "Evaluate asynchronous tasks with configurable concurrency.",
             "homepageURL": "https://bl.ocks.org/mbostock/1696080",
             "createdAt": "2012-01-28T22:16:37Z",
-            "updatedAt": "2017-04-05T09:24:48Z",
+            "updatedAt": "2017-04-06T23:28:02Z",
             "primaryLanguage": {
               "color": "#f1e05a",
               "id": "MDg6TGFuZ3VhZ2UxNDA\u003d",
@@ -235,23 +355,23 @@
           "node": {
             "id": "MDEwOlJlcG9zaXRvcnkzODc4OTgx",
             "name": "d3-plugins",
+            "description": "A repository for sharing D3.js plugins.",
             "owner": {
               "login": "d3"
             },
             "watchers": {
-              "totalCount": 197
+              "totalCount": 196
             },
             "forks": {
-              "totalCount": 640
+              "totalCount": 642
             },
             "stargazers": {
-              "totalCount": 1691
+              "totalCount": 1694
             },
             "isFork": false,
-            "description": "A repository for sharing D3.js plugins.",
             "homepageURL": "https://github.com/mbostock/d3/wiki/Plugins",
             "createdAt": "2012-03-30T17:18:53Z",
-            "updatedAt": "2017-03-27T19:48:16Z",
+            "updatedAt": "2017-04-06T17:17:26Z",
             "primaryLanguage": {
               "color": "#f1e05a",
               "id": "MDg6TGFuZ3VhZ2UxNDA\u003d",
@@ -289,6 +409,7 @@
           "node": {
             "id": "MDEwOlJlcG9zaXRvcnk0MTc5MDc2",
             "name": "d3.github.com",
+            "description": "The D3 website.",
             "owner": {
               "login": "d3"
             },
@@ -302,7 +423,6 @@
               "totalCount": 143
             },
             "isFork": false,
-            "description": "The D3 website.",
             "homepageURL": "https://d3js.org/",
             "createdAt": "2012-04-30T01:54:15Z",
             "updatedAt": "2017-03-28T01:12:47Z",
@@ -322,7 +442,7 @@
                   }
                 },
                 {
-                  "size": 19526292,
+                  "size": 19537530,
                   "node": {
                     "name": "JavaScript",
                     "id": "MDg6TGFuZ3VhZ2UxNDA\u003d",
@@ -330,7 +450,7 @@
                   }
                 },
                 {
-                  "size": 46404,
+                  "size": 46784,
                   "node": {
                     "name": "HTML",
                     "id": "MDg6TGFuZ3VhZ2U0MTc\u003d",
@@ -341,9 +461,9 @@
             },
             "contribute": {
               "w": 1335657600,
-              "a": 819661,
+              "a": 820059,
               "d": 107422,
-              "c": 977
+              "c": 980
             }
           }
         },
@@ -351,6 +471,7 @@
           "node": {
             "id": "MDEwOlJlcG9zaXRvcnk1OTA1Njgx",
             "name": "recast",
+            "description": "JavaScript syntax tree transformer, nondestructive pretty-printer, and automatic source map generator",
             "owner": {
               "login": "benjamn"
             },
@@ -358,16 +479,15 @@
               "totalCount": 37
             },
             "forks": {
-              "totalCount": 102
+              "totalCount": 101
             },
             "stargazers": {
-              "totalCount": 1294
+              "totalCount": 1297
             },
             "isFork": false,
-            "description": "JavaScript syntax tree transformer, nondestructive pretty-printer, and automatic source map generator",
             "homepageURL": "",
             "createdAt": "2012-09-21T18:34:20Z",
-            "updatedAt": "2017-04-04T20:36:22Z",
+            "updatedAt": "2017-04-08T13:47:56Z",
             "primaryLanguage": {
               "color": "#f1e05a",
               "id": "MDg6TGFuZ3VhZ2UxNDA\u003d",
@@ -376,7 +496,7 @@
             "languages": {
               "edges": [
                 {
-                  "size": 351630,
+                  "size": 352240,
                   "node": {
                     "name": "JavaScript",
                     "id": "MDg6TGFuZ3VhZ2UxNDA\u003d",
@@ -397,6 +517,7 @@
           "node": {
             "id": "MDEwOlJlcG9zaXRvcnk2NzE0NjYz",
             "name": "topojson",
+            "description": "An extension of GeoJSON that encodes topology! 🌐",
             "owner": {
               "login": "topojson"
             },
@@ -404,16 +525,15 @@
               "totalCount": 166
             },
             "forks": {
-              "totalCount": 594
+              "totalCount": 595
             },
             "stargazers": {
-              "totalCount": 2791
+              "totalCount": 2798
             },
             "isFork": false,
-            "description": "An extension of GeoJSON that encodes topology! 🌐",
             "homepageURL": "",
             "createdAt": "2012-11-16T01:23:44Z",
-            "updatedAt": "2017-04-05T10:10:38Z",
+            "updatedAt": "2017-04-08T08:02:40Z",
             "primaryLanguage": {
               "color": "#f1e05a",
               "id": "MDg6TGFuZ3VhZ2UxNDA\u003d",
@@ -443,6 +563,7 @@
           "node": {
             "id": "MDEwOlJlcG9zaXRvcnk4MTAzMDQ2",
             "name": "us-atlas",
+            "description": "Pre-built TopoJSON from the U.S. Census Bureau.",
             "owner": {
               "login": "topojson"
             },
@@ -450,13 +571,12 @@
               "totalCount": 33
             },
             "forks": {
-              "totalCount": 91
+              "totalCount": 90
             },
             "stargazers": {
               "totalCount": 500
             },
             "isFork": false,
-            "description": "Pre-built TopoJSON from the U.S. Census Bureau.",
             "homepageURL": "",
             "createdAt": "2013-02-08T22:55:07Z",
             "updatedAt": "2017-04-04T22:54:08Z",
@@ -489,6 +609,7 @@
           "node": {
             "id": "MDEwOlJlcG9zaXRvcnk4MTE2MDg2",
             "name": "shapefile",
+            "description": "A cross-platform streaming parser for the ESRI Shapefile spatial data format.",
             "owner": {
               "login": "mbostock"
             },
@@ -499,13 +620,12 @@
               "totalCount": 59
             },
             "stargazers": {
-              "totalCount": 315
+              "totalCount": 316
             },
             "isFork": false,
-            "description": "A cross-platform streaming parser for the ESRI Shapefile spatial data format.",
             "homepageURL": "",
             "createdAt": "2013-02-09T22:33:15Z",
-            "updatedAt": "2017-03-29T20:26:00Z",
+            "updatedAt": "2017-04-08T00:58:55Z",
             "primaryLanguage": {
               "color": "#f1e05a",
               "id": "MDg6TGFuZ3VhZ2UxNDA\u003d",
@@ -535,6 +655,7 @@
           "node": {
             "id": "MDEwOlJlcG9zaXRvcnk4MjA1MDY1",
             "name": "world-atlas",
+            "description": "Pre-built TopoJSON from Natural Earth.",
             "owner": {
               "login": "topojson"
             },
@@ -545,13 +666,12 @@
               "totalCount": 49
             },
             "stargazers": {
-              "totalCount": 401
+              "totalCount": 402
             },
             "isFork": false,
-            "description": "Pre-built TopoJSON from Natural Earth.",
             "homepageURL": "",
             "createdAt": "2013-02-14T18:31:03Z",
-            "updatedAt": "2017-04-04T15:07:02Z",
+            "updatedAt": "2017-04-05T15:36:28Z",
             "primaryLanguage": {
               "color": "#89e051",
               "id": "MDg6TGFuZ3VhZ2UxMzk\u003d",
@@ -581,6 +701,7 @@
           "node": {
             "id": "MDEwOlJlcG9zaXRvcnk4NjM5Mzk5",
             "name": "svg-crowbar",
+            "description": "Extracts an SVG node and accompanying styles from an HTML document and allows you to download it all as an SVG file.",
             "owner": {
               "login": "NYTimes"
             },
@@ -591,13 +712,12 @@
               "totalCount": 105
             },
             "stargazers": {
-              "totalCount": 565
+              "totalCount": 567
             },
             "isFork": false,
-            "description": "Extracts an SVG node and accompanying styles from an HTML document and allows you to download it all as an SVG file.",
             "homepageURL": "https://nytimes.github.io/svg-crowbar/",
             "createdAt": "2013-03-07T23:58:20Z",
-            "updatedAt": "2017-04-01T01:56:10Z",
+            "updatedAt": "2017-04-07T02:13:47Z",
             "primaryLanguage": {
               "color": "#f1e05a",
               "id": "MDg6TGFuZ3VhZ2UxNDA\u003d",
@@ -643,6 +763,7 @@
           "node": {
             "id": "MDEwOlJlcG9zaXRvcnk4NjU2NDI1",
             "name": "d3-dsv",
+            "description": "A parser and formatter for delimiter-separated values, such as CSV and TSV.",
             "owner": {
               "login": "d3"
             },
@@ -650,13 +771,12 @@
               "totalCount": 9
             },
             "forks": {
-              "totalCount": 19
+              "totalCount": 20
             },
             "stargazers": {
               "totalCount": 112
             },
             "isFork": false,
-            "description": "A parser and formatter for delimiter-separated values, such as CSV and TSV.",
             "homepageURL": "",
             "createdAt": "2013-03-08T17:42:37Z",
             "updatedAt": "2017-03-21T19:55:02Z",
@@ -689,6 +809,7 @@
           "node": {
             "id": "MDEwOlJlcG9zaXRvcnk4NzQzODk2",
             "name": "smash",
+            "description": "SMASH TOGETHER MULTIPLE FILES [deprecated; try rollup/rollup]",
             "owner": {
               "login": "mbostock"
             },
@@ -702,7 +823,6 @@
               "totalCount": 207
             },
             "isFork": false,
-            "description": "SMASH TOGETHER MULTIPLE FILES [deprecated; try rollup/rollup]",
             "homepageURL": "",
             "createdAt": "2013-03-13T03:07:10Z",
             "updatedAt": "2017-03-02T18:56:37Z",
@@ -735,6 +855,7 @@
           "node": {
             "id": "MDEwOlJlcG9zaXRvcnkxMDEzMjc4Mw\u003d\u003d",
             "name": "us-rivers",
+            "description": "A map of flowlines from NHDPlus.",
             "owner": {
               "login": "mbostock"
             },
@@ -748,7 +869,6 @@
               "totalCount": 95
             },
             "isFork": false,
-            "description": "A map of flowlines from NHDPlus.",
             "homepageURL": "",
             "createdAt": "2013-05-17T21:49:29Z",
             "updatedAt": "2017-02-08T07:26:06Z",
@@ -789,6 +909,7 @@
           "node": {
             "id": "MDEwOlJlcG9zaXRvcnkxMDY5MTM5OA\u003d\u003d",
             "name": "proj4js",
+            "description": "JavaScript library to transform coordinates from one coordinate system to another, including datum transformations",
             "owner": {
               "login": "proj4js"
             },
@@ -796,16 +917,15 @@
               "totalCount": 39
             },
             "forks": {
-              "totalCount": 119
+              "totalCount": 120
             },
             "stargazers": {
-              "totalCount": 547
+              "totalCount": 550
             },
             "isFork": false,
-            "description": "JavaScript library to transform coordinates from one coordinate system to another, including datum transformations",
             "homepageURL": "http://proj4js.org",
             "createdAt": "2013-06-14T15:00:39Z",
-            "updatedAt": "2017-04-05T04:07:38Z",
+            "updatedAt": "2017-04-07T06:52:06Z",
             "primaryLanguage": {
               "color": "#f1e05a",
               "id": "MDg6TGFuZ3VhZ2UxNDA\u003d",
@@ -845,6 +965,7 @@
           "node": {
             "id": "MDEwOlJlcG9zaXRvcnkxMDg4ODE5Mg\u003d\u003d",
             "name": "d3-geo-projection",
+            "description": "Extended geographic projections for d3-geo.",
             "owner": {
               "login": "d3"
             },
@@ -852,16 +973,15 @@
               "totalCount": 49
             },
             "forks": {
-              "totalCount": 102
+              "totalCount": 103
             },
             "stargazers": {
-              "totalCount": 485
+              "totalCount": 489
             },
             "isFork": false,
-            "description": "Extended geographic projections for d3-geo.",
             "homepageURL": "",
             "createdAt": "2013-06-23T16:50:58Z",
-            "updatedAt": "2017-04-05T13:36:42Z",
+            "updatedAt": "2017-04-08T01:23:28Z",
             "primaryLanguage": {
               "color": "#f1e05a",
               "id": "MDg6TGFuZ3VhZ2UxNDA\u003d",
@@ -899,6 +1019,7 @@
           "node": {
             "id": "MDEwOlJlcG9zaXRvcnkxMjQzOTgyNA\u003d\u003d",
             "name": "topojson-specification",
+            "description": "An extension to GeoJSON that encodes topology and allows compact, delta-encoded coordinates.",
             "owner": {
               "login": "topojson"
             },
@@ -912,10 +1033,10 @@
               "totalCount": 102
             },
             "isFork": false,
-            "description": "An extension to GeoJSON that encodes topology and allows compact, delta-encoded coordinates.",
             "homepageURL": "",
             "createdAt": "2013-08-28T17:14:46Z",
             "updatedAt": "2017-03-31T01:15:53Z",
+            "primaryLanguage": null,
             "languages": {
               "edges": []
             },
@@ -931,6 +1052,7 @@
           "node": {
             "id": "MDEwOlJlcG9zaXRvcnkxNzMyNjM3Mw\u003d\u003d",
             "name": "gistup",
+            "description": "Create a gist from terminal, then use git to update it.",
             "owner": {
               "login": "mbostock"
             },
@@ -944,7 +1066,7 @@
               "totalCount": 360
             },
             "isFork": false,
-            "description": "Create a gist from terminal, then use git to update it.",
+            "homepageURL": null,
             "createdAt": "2014-03-01T23:03:37Z",
             "updatedAt": "2017-04-02T04:57:15Z",
             "primaryLanguage": {
@@ -976,6 +1098,7 @@
           "node": {
             "id": "MDEwOlJlcG9zaXRvcnkxNzk5MzUxMA\u003d\u003d",
             "name": "text-encoding",
+            "description": "Polyfill for the Encoding Living Standard\u0027s API",
             "owner": {
               "login": "inexorabletash"
             },
@@ -986,12 +1109,12 @@
               "totalCount": 60
             },
             "stargazers": {
-              "totalCount": 262
+              "totalCount": 263
             },
             "isFork": false,
-            "description": "Polyfill for the Encoding Living Standard\u0027s API",
+            "homepageURL": null,
             "createdAt": "2014-03-21T20:33:31Z",
-            "updatedAt": "2017-04-05T08:50:51Z",
+            "updatedAt": "2017-04-07T18:15:12Z",
             "primaryLanguage": {
               "color": "#f1e05a",
               "id": "MDg6TGFuZ3VhZ2UxNDA\u003d",
@@ -1023,6 +1146,7 @@
           "node": {
             "id": "MDEwOlJlcG9zaXRvcnkxODQ5NTY2Ng\u003d\u003d",
             "name": "rw",
+            "description": "Now stdin and stdout are files.",
             "owner": {
               "login": "mbostock"
             },
@@ -1036,7 +1160,6 @@
               "totalCount": 101
             },
             "isFork": false,
-            "description": "Now stdin and stdout are files.",
             "homepageURL": "",
             "createdAt": "2014-04-06T18:07:23Z",
             "updatedAt": "2017-02-06T14:28:43Z",
@@ -1077,6 +1200,7 @@
           "node": {
             "id": "MDEwOlJlcG9zaXRvcnkxOTQ5NDIzOA\u003d\u003d",
             "name": "dbf2dsv",
+            "description": "Convert DBF to DSV",
             "owner": {
               "login": "herrstucki"
             },
@@ -1090,7 +1214,7 @@
               "totalCount": 0
             },
             "isFork": false,
-            "description": "Convert DBF to DSV",
+            "homepageURL": null,
             "createdAt": "2014-05-06T12:59:24Z",
             "updatedAt": "2015-08-04T14:33:56Z",
             "primaryLanguage": {
@@ -1116,6 +1240,7 @@
           "node": {
             "id": "MDEwOlJlcG9zaXRvcnkyNjUyMjA1MQ\u003d\u003d",
             "name": "solar-calculator",
+            "description": "Equations for computing the position of the Sun.",
             "owner": {
               "login": "mbostock"
             },
@@ -1129,7 +1254,7 @@
               "totalCount": 32
             },
             "isFork": false,
-            "description": "Equations for computing the position of the Sun.",
+            "homepageURL": null,
             "createdAt": "2014-11-12T06:13:55Z",
             "updatedAt": "2017-03-24T19:05:13Z",
             "primaryLanguage": {
@@ -1161,6 +1286,7 @@
           "node": {
             "id": "MDEwOlJlcG9zaXRvcnkzNTQ0NjQ1Ng\u003d\u003d",
             "name": "d3-selection",
+            "description": "Transform the DOM by selecting elements and joining to data.",
             "owner": {
               "login": "d3"
             },
@@ -1174,7 +1300,7 @@
               "totalCount": 140
             },
             "isFork": false,
-            "description": "Transform the DOM by selecting elements and joining to data.",
+            "homepageURL": null,
             "createdAt": "2015-05-11T19:52:11Z",
             "updatedAt": "2017-04-02T21:10:03Z",
             "primaryLanguage": {
@@ -1206,6 +1332,7 @@
           "node": {
             "id": "MDEwOlJlcG9zaXRvcnkzNTUwMjEwMg\u003d\u003d",
             "name": "d3-selection-multi",
+            "description": "Multi-value syntax for d3-selection and d3-transition.",
             "owner": {
               "login": "d3"
             },
@@ -1219,7 +1346,6 @@
               "totalCount": 28
             },
             "isFork": false,
-            "description": "Multi-value syntax for d3-selection and d3-transition.",
             "homepageURL": "",
             "createdAt": "2015-05-12T17:17:38Z",
             "updatedAt": "2017-03-08T09:15:41Z",
@@ -1252,23 +1378,23 @@
           "node": {
             "id": "MDEwOlJlcG9zaXRvcnkzNTY0MDIyOQ\u003d\u003d",
             "name": "rollup",
+            "description": "Next-generation ES6 module bundler",
             "owner": {
               "login": "rollup"
             },
             "watchers": {
-              "totalCount": 211
+              "totalCount": 213
             },
             "forks": {
-              "totalCount": 311
+              "totalCount": 313
             },
             "stargazers": {
-              "totalCount": 8765
+              "totalCount": 8883
             },
             "isFork": false,
-            "description": "Next-generation ES6 module bundler",
             "homepageURL": "http://rollupjs.org",
             "createdAt": "2015-05-14T22:26:28Z",
-            "updatedAt": "2017-04-05T13:29:27Z",
+            "updatedAt": "2017-04-08T13:58:14Z",
             "primaryLanguage": {
               "color": "#f1e05a",
               "id": "MDg6TGFuZ3VhZ2UxNDA\u003d",
@@ -1298,6 +1424,7 @@
           "node": {
             "id": "MDEwOlJlcG9zaXRvcnkzNjQ1NjU4Mg\u003d\u003d",
             "name": "d3-transition",
+            "description": "Animated transitions for D3 selections.",
             "owner": {
               "login": "d3"
             },
@@ -1311,7 +1438,7 @@
               "totalCount": 57
             },
             "isFork": false,
-            "description": "Animated transitions for D3 selections.",
+            "homepageURL": null,
             "createdAt": "2015-05-28T18:03:52Z",
             "updatedAt": "2017-04-05T09:56:26Z",
             "primaryLanguage": {
@@ -1343,6 +1470,7 @@
           "node": {
             "id": "MDEwOlJlcG9zaXRvcnkzNjY5NzI3MA\u003d\u003d",
             "name": "d3-ease",
+            "description": "Easing functions for smooth animation.",
             "owner": {
               "login": "d3"
             },
@@ -1356,7 +1484,7 @@
               "totalCount": 221
             },
             "isFork": false,
-            "description": "Easing functions for smooth animation.",
+            "homepageURL": null,
             "createdAt": "2015-06-02T00:26:20Z",
             "updatedAt": "2017-03-30T04:07:26Z",
             "primaryLanguage": {
@@ -1388,6 +1516,7 @@
           "node": {
             "id": "MDEwOlJlcG9zaXRvcnkzNjc0NzQ0Nw\u003d\u003d",
             "name": "d3-color",
+            "description": "Color spaces! RGB, HSL, Cubehelix, Lab (CIELAB) and HCL (CIELCH).",
             "owner": {
               "login": "d3"
             },
@@ -1395,16 +1524,15 @@
               "totalCount": 17
             },
             "forks": {
-              "totalCount": 20
+              "totalCount": 21
             },
             "stargazers": {
-              "totalCount": 119
+              "totalCount": 120
             },
             "isFork": false,
-            "description": "Color spaces! RGB, HSL, Cubehelix, Lab (CIELAB) and HCL (CIELCH).",
             "homepageURL": "",
             "createdAt": "2015-06-02T16:49:07Z",
-            "updatedAt": "2017-03-13T15:19:52Z",
+            "updatedAt": "2017-04-07T00:13:06Z",
             "primaryLanguage": {
               "color": "#f1e05a",
               "id": "MDg6TGFuZ3VhZ2UxNDA\u003d",
@@ -1434,6 +1562,7 @@
           "node": {
             "id": "MDEwOlJlcG9zaXRvcnkzNjgzNTY2Mw\u003d\u003d",
             "name": "d3-array",
+            "description": "Array manipulation, ordering, searching, summarizing, etc.",
             "owner": {
               "login": "d3"
             },
@@ -1441,13 +1570,13 @@
               "totalCount": 16
             },
             "forks": {
-              "totalCount": 42
+              "totalCount": 43
             },
             "stargazers": {
               "totalCount": 77
             },
             "isFork": false,
-            "description": "Array manipulation, ordering, searching, summarizing, etc.",
+            "homepageURL": null,
             "createdAt": "2015-06-03T23:08:57Z",
             "updatedAt": "2017-04-05T02:34:44Z",
             "primaryLanguage": {
@@ -1479,6 +1608,7 @@
           "node": {
             "id": "MDEwOlJlcG9zaXRvcnkzNjk0OTI3Ng\u003d\u003d",
             "name": "d3-dispatch",
+            "description": "Register named callbacks and call them with arguments.",
             "owner": {
               "login": "d3"
             },
@@ -1492,7 +1622,7 @@
               "totalCount": 28
             },
             "isFork": false,
-            "description": "Register named callbacks and call them with arguments.",
+            "homepageURL": null,
             "createdAt": "2015-06-05T18:43:51Z",
             "updatedAt": "2017-03-08T09:15:37Z",
             "primaryLanguage": {
@@ -1524,23 +1654,23 @@
           "node": {
             "id": "MDEwOlJlcG9zaXRvcnkzNjk1NDAwOA\u003d\u003d",
             "name": "d3-request",
+            "description": "A convenient alternative to XMLHttpRequest.",
             "owner": {
               "login": "d3"
             },
             "watchers": {
-              "totalCount": 8
+              "totalCount": 9
             },
             "forks": {
               "totalCount": 23
             },
             "stargazers": {
-              "totalCount": 51
+              "totalCount": 52
             },
             "isFork": false,
-            "description": "A convenient alternative to XMLHttpRequest.",
             "homepageURL": "",
             "createdAt": "2015-06-05T20:30:46Z",
-            "updatedAt": "2017-04-01T14:02:10Z",
+            "updatedAt": "2017-04-06T19:34:45Z",
             "primaryLanguage": {
               "color": "#f1e05a",
               "id": "MDg6TGFuZ3VhZ2UxNDA\u003d",
@@ -1570,6 +1700,7 @@
           "node": {
             "id": "MDEwOlJlcG9zaXRvcnkzNzA4Mjg3MQ\u003d\u003d",
             "name": "d3-timer",
+            "description": "An efficient queue for managing thousands of concurrent animations.",
             "owner": {
               "login": "d3"
             },
@@ -1577,13 +1708,12 @@
               "totalCount": 12
             },
             "forks": {
-              "totalCount": 15
+              "totalCount": 16
             },
             "stargazers": {
               "totalCount": 48
             },
             "isFork": false,
-            "description": "An efficient queue for managing thousands of concurrent animations.",
             "homepageURL": "",
             "createdAt": "2015-06-08T17:50:19Z",
             "updatedAt": "2017-03-29T10:38:32Z",
@@ -1616,6 +1746,7 @@
           "node": {
             "id": "MDEwOlJlcG9zaXRvcnkzNzE0NTAzNQ\u003d\u003d",
             "name": "d3-random",
+            "description": "Generate random numbers from various distributions.",
             "owner": {
               "login": "d3"
             },
@@ -1629,7 +1760,7 @@
               "totalCount": 19
             },
             "isFork": false,
-            "description": "Generate random numbers from various distributions.",
+            "homepageURL": null,
             "createdAt": "2015-06-09T16:46:17Z",
             "updatedAt": "2017-01-29T08:04:13Z",
             "primaryLanguage": {
@@ -1661,6 +1792,7 @@
           "node": {
             "id": "MDEwOlJlcG9zaXRvcnkzNzE3MzUwNA\u003d\u003d",
             "name": "d3-interpolate",
+            "description": "Interpolate numbers, colors, strings, arrays, objects, whatever!",
             "owner": {
               "login": "d3"
             },
@@ -1674,7 +1806,7 @@
               "totalCount": 83
             },
             "isFork": false,
-            "description": "Interpolate numbers, colors, strings, arrays, objects, whatever!",
+            "homepageURL": null,
             "createdAt": "2015-06-10T03:35:42Z",
             "updatedAt": "2017-04-02T22:34:37Z",
             "primaryLanguage": {
@@ -1706,6 +1838,7 @@
           "node": {
             "id": "MDEwOlJlcG9zaXRvcnkzNzIyMDQwMw\u003d\u003d",
             "name": "d3-legend",
+            "description": "A reusable d3 legend component. ",
             "owner": {
               "login": "susielu"
             },
@@ -1719,7 +1852,6 @@
               "totalCount": 473
             },
             "isFork": false,
-            "description": "A reusable d3 legend component. ",
             "homepageURL": "http://d3-legend.susielu.com/",
             "createdAt": "2015-06-10T20:19:36Z",
             "updatedAt": "2017-04-01T06:35:56Z",
@@ -1752,6 +1884,7 @@
           "node": {
             "id": "MDEwOlJlcG9zaXRvcnkzNzMwMTg0Mw\u003d\u003d",
             "name": "d3-format",
+            "description": "Format numbers for human consumption.",
             "owner": {
               "login": "d3"
             },
@@ -1762,13 +1895,12 @@
               "totalCount": 21
             },
             "stargazers": {
-              "totalCount": 149
+              "totalCount": 150
             },
             "isFork": false,
-            "description": "Format numbers for human consumption.",
             "homepageURL": "",
             "createdAt": "2015-06-12T04:23:52Z",
-            "updatedAt": "2017-04-04T18:45:29Z",
+            "updatedAt": "2017-04-06T14:13:52Z",
             "primaryLanguage": {
               "color": "#f1e05a",
               "id": "MDg6TGFuZ3VhZ2UxNDA\u003d",
@@ -1798,6 +1930,7 @@
           "node": {
             "id": "MDEwOlJlcG9zaXRvcnkzNzU1OTI5OQ\u003d\u003d",
             "name": "d3-scale",
+            "description": "Encodings that map abstract data to visual representation.",
             "owner": {
               "login": "d3"
             },
@@ -1808,13 +1941,12 @@
               "totalCount": 93
             },
             "stargazers": {
-              "totalCount": 774
+              "totalCount": 776
             },
             "isFork": false,
-            "description": "Encodings that map abstract data to visual representation.",
             "homepageURL": "",
             "createdAt": "2015-06-16T22:26:27Z",
-            "updatedAt": "2017-04-03T21:39:43Z",
+            "updatedAt": "2017-04-07T20:29:52Z",
             "primaryLanguage": {
               "color": "#f1e05a",
               "id": "MDg6TGFuZ3VhZ2UxNDA\u003d",
@@ -1844,6 +1976,7 @@
           "node": {
             "id": "MDEwOlJlcG9zaXRvcnkzODAwMjEzOQ\u003d\u003d",
             "name": "d3-time",
+            "description": "A calculator for humanity’s peculiar conventions of time.",
             "owner": {
               "login": "d3"
             },
@@ -1857,7 +1990,6 @@
               "totalCount": 102
             },
             "isFork": false,
-            "description": "A calculator for humanity’s peculiar conventions of time.",
             "homepageURL": "",
             "createdAt": "2015-06-24T18:07:15Z",
             "updatedAt": "2017-03-20T03:06:34Z",
@@ -1898,6 +2030,7 @@
           "node": {
             "id": "MDEwOlJlcG9zaXRvcnkzODI3MzQwMw\u003d\u003d",
             "name": "d3-time-format",
+            "description": "Parse and format times, inspired by strptime and strftime.",
             "owner": {
               "login": "d3"
             },
@@ -1911,7 +2044,6 @@
               "totalCount": 68
             },
             "isFork": false,
-            "description": "Parse and format times, inspired by strptime and strftime.",
             "homepageURL": "",
             "createdAt": "2015-06-29T21:57:18Z",
             "updatedAt": "2017-04-02T22:39:50Z",
@@ -1944,6 +2076,7 @@
           "node": {
             "id": "MDEwOlJlcG9zaXRvcnkzODQ0NzAxMg\u003d\u003d",
             "name": "d3-quadtree",
+            "description": "Two-dimensional recursive spatial subdivision.",
             "owner": {
               "login": "d3"
             },
@@ -1957,7 +2090,7 @@
               "totalCount": 48
             },
             "isFork": false,
-            "description": "Two-dimensional recursive spatial subdivision.",
+            "homepageURL": null,
             "createdAt": "2015-07-02T17:30:41Z",
             "updatedAt": "2017-03-28T12:44:20Z",
             "primaryLanguage": {
@@ -1989,6 +2122,7 @@
           "node": {
             "id": "MDEwOlJlcG9zaXRvcnkzODQ1NDgyMw\u003d\u003d",
             "name": "d3-voronoi",
+            "description": "Compute the Voronoi diagram of a set of two-dimensional points.",
             "owner": {
               "login": "d3"
             },
@@ -2002,7 +2136,7 @@
               "totalCount": 87
             },
             "isFork": false,
-            "description": "Compute the Voronoi diagram of a set of two-dimensional points.",
+            "homepageURL": null,
             "createdAt": "2015-07-02T20:15:40Z",
             "updatedAt": "2017-04-01T16:34:57Z",
             "primaryLanguage": {
@@ -2034,6 +2168,7 @@
           "node": {
             "id": "MDEwOlJlcG9zaXRvcnkzODYwMDExNQ\u003d\u003d",
             "name": "d3-path",
+            "description": "Serialize Canvas path commands to SVG.",
             "owner": {
               "login": "d3"
             },
@@ -2047,7 +2182,7 @@
               "totalCount": 70
             },
             "isFork": false,
-            "description": "Serialize Canvas path commands to SVG.",
+            "homepageURL": null,
             "createdAt": "2015-07-06T05:54:33Z",
             "updatedAt": "2017-04-02T22:39:48Z",
             "primaryLanguage": {
@@ -2079,6 +2214,7 @@
           "node": {
             "id": "MDEwOlJlcG9zaXRvcnkzODY0MDc3Mw\u003d\u003d",
             "name": "d3-shape",
+            "description": "Graphical primitives for visualization, such as lines and areas.",
             "owner": {
               "login": "d3"
             },
@@ -2086,16 +2222,15 @@
               "totalCount": 46
             },
             "forks": {
-              "totalCount": 95
+              "totalCount": 98
             },
             "stargazers": {
-              "totalCount": 1366
+              "totalCount": 1368
             },
             "isFork": false,
-            "description": "Graphical primitives for visualization, such as lines and areas.",
             "homepageURL": "",
             "createdAt": "2015-07-06T19:20:03Z",
-            "updatedAt": "2017-04-05T10:41:14Z",
+            "updatedAt": "2017-04-07T20:27:07Z",
             "primaryLanguage": {
               "color": "#f1e05a",
               "id": "MDg6TGFuZ3VhZ2UxNDA\u003d",
@@ -2125,6 +2260,7 @@
           "node": {
             "id": "MDEwOlJlcG9zaXRvcnkzODY1NTQ1Nw\u003d\u003d",
             "name": "d3-polygon",
+            "description": "Geometric operations for two-dimensional polygons.",
             "owner": {
               "login": "d3"
             },
@@ -2138,7 +2274,6 @@
               "totalCount": 27
             },
             "isFork": false,
-            "description": "Geometric operations for two-dimensional polygons.",
             "homepageURL": "",
             "createdAt": "2015-07-07T01:07:47Z",
             "updatedAt": "2017-04-03T09:27:33Z",
@@ -2171,6 +2306,7 @@
           "node": {
             "id": "MDEwOlJlcG9zaXRvcnkzOTE1MjQwMA\u003d\u003d",
             "name": "d3-hierarchy",
+            "description": "2D layout algorithms for visualizing hierarchical data.",
             "owner": {
               "login": "d3"
             },
@@ -2181,13 +2317,12 @@
               "totalCount": 48
             },
             "stargazers": {
-              "totalCount": 121
+              "totalCount": 122
             },
             "isFork": false,
-            "description": "2D layout algorithms for visualizing hierarchical data.",
             "homepageURL": "",
             "createdAt": "2015-07-15T18:01:35Z",
-            "updatedAt": "2017-04-04T21:41:19Z",
+            "updatedAt": "2017-04-05T20:57:13Z",
             "primaryLanguage": {
               "color": "#f1e05a",
               "id": "MDg6TGFuZ3VhZ2UxNDA\u003d",
@@ -2217,6 +2352,7 @@
           "node": {
             "id": "MDEwOlJlcG9zaXRvcnk0NTQ5MzkwNQ\u003d\u003d",
             "name": "d3-force",
+            "description": "Force-directed graph layout using velocity Verlet integration.",
             "owner": {
               "login": "d3"
             },
@@ -2227,13 +2363,12 @@
               "totalCount": 68
             },
             "stargazers": {
-              "totalCount": 159
+              "totalCount": 160
             },
             "isFork": false,
-            "description": "Force-directed graph layout using velocity Verlet integration.",
             "homepageURL": "",
             "createdAt": "2015-11-03T20:35:53Z",
-            "updatedAt": "2017-03-31T04:50:08Z",
+            "updatedAt": "2017-04-06T08:51:32Z",
             "primaryLanguage": {
               "color": "#f1e05a",
               "id": "MDg6TGFuZ3VhZ2UxNDA\u003d",
@@ -2263,6 +2398,7 @@
           "node": {
             "id": "MDEwOlJlcG9zaXRvcnk0NjY0MDE0MA\u003d\u003d",
             "name": "d3-stateplane",
+            "description": "D3-friendly State Plane projections",
             "owner": {
               "login": "veltman"
             },
@@ -2276,9 +2412,10 @@
               "totalCount": 18
             },
             "isFork": false,
-            "description": "D3-friendly State Plane projections",
+            "homepageURL": null,
             "createdAt": "2015-11-22T00:34:01Z",
             "updatedAt": "2017-03-11T16:39:36Z",
+            "primaryLanguage": null,
             "languages": {
               "edges": []
             }
@@ -2288,6 +2425,7 @@
           "node": {
             "id": "MDEwOlJlcG9zaXRvcnk0NzMyMTU1NQ\u003d\u003d",
             "name": "d3-sankey",
+            "description": "Visualize flow between nodes in a directed acyclic network.",
             "owner": {
               "login": "d3"
             },
@@ -2298,13 +2436,12 @@
               "totalCount": 24
             },
             "stargazers": {
-              "totalCount": 74
+              "totalCount": 77
             },
             "isFork": false,
-            "description": "Visualize flow between nodes in a directed acyclic network.",
             "homepageURL": "http://bost.ocks.org/mike/sankey/",
             "createdAt": "2015-12-03T09:25:01Z",
-            "updatedAt": "2017-03-31T04:58:07Z",
+            "updatedAt": "2017-04-05T20:31:54Z",
             "primaryLanguage": {
               "color": "#f1e05a",
               "id": "MDg6TGFuZ3VhZ2UxNDA\u003d",
@@ -2334,6 +2471,7 @@
           "node": {
             "id": "MDEwOlJlcG9zaXRvcnk0NzQxODg3Nw\u003d\u003d",
             "name": "d3-chord",
+            "description": "Visualizations relationships or network flow with an aesthetically-pleasing circular layout.",
             "owner": {
               "login": "d3"
             },
@@ -2347,7 +2485,7 @@
               "totalCount": 29
             },
             "isFork": false,
-            "description": "Visualizations relationships or network flow with an aesthetically-pleasing circular layout.",
+            "homepageURL": null,
             "createdAt": "2015-12-04T17:24:28Z",
             "updatedAt": "2017-03-28T01:56:46Z",
             "primaryLanguage": {
@@ -2379,6 +2517,7 @@
           "node": {
             "id": "MDEwOlJlcG9zaXRvcnk0NzQ3Mzk5MA\u003d\u003d",
             "name": "d3-hexbin",
+            "description": "Group two-dimensional points into hexagonal bins.",
             "owner": {
               "login": "d3"
             },
@@ -2392,7 +2531,6 @@
               "totalCount": 38
             },
             "isFork": false,
-            "description": "Group two-dimensional points into hexagonal bins.",
             "homepageURL": "",
             "createdAt": "2015-12-05T21:49:46Z",
             "updatedAt": "2017-04-03T00:30:28Z",
@@ -2425,6 +2563,7 @@
           "node": {
             "id": "MDEwOlJlcG9zaXRvcnk0ODMzMDY5Mw\u003d\u003d",
             "name": "d3-logo",
+            "description": "D3 brand assets.",
             "owner": {
               "login": "d3"
             },
@@ -2438,9 +2577,10 @@
               "totalCount": 16
             },
             "isFork": false,
-            "description": "D3 brand assets.",
+            "homepageURL": null,
             "createdAt": "2015-12-20T17:31:59Z",
             "updatedAt": "2017-01-29T08:04:08Z",
+            "primaryLanguage": null,
             "languages": {
               "edges": []
             },
@@ -2456,6 +2596,7 @@
           "node": {
             "id": "MDEwOlJlcG9zaXRvcnk0OTAzMzg3Mg\u003d\u003d",
             "name": "d3-axis",
+            "description": "Human-readable reference marks for scales.",
             "owner": {
               "login": "d3"
             },
@@ -2463,13 +2604,13 @@
               "totalCount": 9
             },
             "forks": {
-              "totalCount": 46
+              "totalCount": 45
             },
             "stargazers": {
               "totalCount": 32
             },
             "isFork": false,
-            "description": "Human-readable reference marks for scales.",
+            "homepageURL": null,
             "createdAt": "2016-01-05T01:26:50Z",
             "updatedAt": "2017-03-24T19:21:37Z",
             "primaryLanguage": {
@@ -2501,6 +2642,7 @@
           "node": {
             "id": "MDEwOlJlcG9zaXRvcnk0OTA5NjMzNQ\u003d\u003d",
             "name": "d3-twodim",
+            "description": "A D3.v3.js module for creating 2D representations of data",
             "owner": {
               "login": "uwgraphics"
             },
@@ -2514,7 +2656,6 @@
               "totalCount": 8
             },
             "isFork": false,
-            "description": "A D3.v3.js module for creating 2D representations of data",
             "homepageURL": "http://uwgraphics.github.io/d3-twodim/",
             "createdAt": "2016-01-05T22:21:21Z",
             "updatedAt": "2017-02-23T21:12:26Z",
@@ -2547,6 +2688,7 @@
           "node": {
             "id": "MDEwOlJlcG9zaXRvcnk0OTIyNzU3MA\u003d\u003d",
             "name": "d3-collection",
+            "description": "Handy data structures for elements keyed by string.",
             "owner": {
               "login": "d3"
             },
@@ -2560,7 +2702,7 @@
               "totalCount": 40
             },
             "isFork": false,
-            "description": "Handy data structures for elements keyed by string.",
+            "homepageURL": null,
             "createdAt": "2016-01-07T20:01:39Z",
             "updatedAt": "2017-04-04T02:34:02Z",
             "primaryLanguage": {
@@ -2592,6 +2734,7 @@
           "node": {
             "id": "MDEwOlJlcG9zaXRvcnk1MDUzNjE5NQ\u003d\u003d",
             "name": "topojson-bower",
+            "description": "Generated files from mbostock/topojson for Bower.",
             "owner": {
               "login": "mbostock-bower"
             },
@@ -2605,7 +2748,6 @@
               "totalCount": 1
             },
             "isFork": false,
-            "description": "Generated files from mbostock/topojson for Bower.",
             "homepageURL": "https://github.com/mbostock/topojson",
             "createdAt": "2016-01-27T20:39:19Z",
             "updatedAt": "2016-10-30T18:58:56Z",
@@ -2638,6 +2780,7 @@
           "node": {
             "id": "MDEwOlJlcG9zaXRvcnk1MDY3Njc3MQ\u003d\u003d",
             "name": "d3-queue-bower",
+            "description": "Generated files from d3-queue for Bower.",
             "owner": {
               "login": "mbostock-bower"
             },
@@ -2651,10 +2794,10 @@
               "totalCount": 1
             },
             "isFork": false,
-            "description": "Generated files from d3-queue for Bower.",
             "homepageURL": "https://github.com/d3/d3-queue",
             "createdAt": "2016-01-29T16:54:42Z",
             "updatedAt": "2017-02-28T17:20:46Z",
+            "primaryLanguage": null,
             "languages": {
               "edges": []
             },
@@ -2670,6 +2813,7 @@
           "node": {
             "id": "MDEwOlJlcG9zaXRvcnk1MTU0NjI0Mw\u003d\u003d",
             "name": "d3-bower",
+            "description": "Generated files from d3 for Bower.",
             "owner": {
               "login": "mbostock-bower"
             },
@@ -2683,10 +2827,10 @@
               "totalCount": 8
             },
             "isFork": false,
-            "description": "Generated files from d3 for Bower.",
             "homepageURL": "https://github.com/mbostock/d3",
             "createdAt": "2016-02-11T20:52:49Z",
             "updatedAt": "2016-12-12T14:29:39Z",
+            "primaryLanguage": null,
             "languages": {
               "edges": []
             },
@@ -2702,6 +2846,7 @@
           "node": {
             "id": "MDEwOlJlcG9zaXRvcnk1MzA3MDkwMQ\u003d\u003d",
             "name": "d3-geo",
+            "description": "Geographic projections, spherical shapes and spherical trigonometry.",
             "owner": {
               "login": "d3"
             },
@@ -2709,13 +2854,12 @@
               "totalCount": 26
             },
             "forks": {
-              "totalCount": 44
+              "totalCount": 46
             },
             "stargazers": {
               "totalCount": 154
             },
             "isFork": false,
-            "description": "Geographic projections, spherical shapes and spherical trigonometry.",
             "homepageURL": "",
             "createdAt": "2016-03-03T17:49:37Z",
             "updatedAt": "2017-04-04T01:32:14Z",
@@ -2756,6 +2900,7 @@
           "node": {
             "id": "MDEwOlJlcG9zaXRvcnk1NzkxMDI0MA\u003d\u003d",
             "name": "d3-drag",
+            "description": "Drag and drop SVG, HTML or Canvas using mouse or touch input.",
             "owner": {
               "login": "d3"
             },
@@ -2763,16 +2908,15 @@
               "totalCount": 9
             },
             "forks": {
-              "totalCount": 8
+              "totalCount": 9
             },
             "stargazers": {
-              "totalCount": 61
+              "totalCount": 63
             },
             "isFork": false,
-            "description": "Drag and drop SVG, HTML or Canvas using mouse or touch input.",
             "homepageURL": "",
             "createdAt": "2016-05-02T18:09:51Z",
-            "updatedAt": "2017-03-29T08:39:45Z",
+            "updatedAt": "2017-04-08T06:11:08Z",
             "primaryLanguage": {
               "color": "#f1e05a",
               "id": "MDg6TGFuZ3VhZ2UxNDA\u003d",
@@ -2802,6 +2946,7 @@
           "node": {
             "id": "MDEwOlJlcG9zaXRvcnk1NzkxMDI1Mw\u003d\u003d",
             "name": "d3-zoom",
+            "description": "Pan and zoom SVG, HTML or Canvas using mouse or touch input.",
             "owner": {
               "login": "d3"
             },
@@ -2812,13 +2957,12 @@
               "totalCount": 28
             },
             "stargazers": {
-              "totalCount": 57
+              "totalCount": 58
             },
             "isFork": false,
-            "description": "Pan and zoom SVG, HTML or Canvas using mouse or touch input.",
             "homepageURL": "",
             "createdAt": "2016-05-02T18:10:00Z",
-            "updatedAt": "2017-03-29T13:29:53Z",
+            "updatedAt": "2017-04-06T02:42:43Z",
             "primaryLanguage": {
               "color": "#f1e05a",
               "id": "MDg6TGFuZ3VhZ2UxNDA\u003d",
@@ -2848,6 +2992,7 @@
           "node": {
             "id": "MDEwOlJlcG9zaXRvcnk1NzkxMDI2Nw\u003d\u003d",
             "name": "d3-brush",
+            "description": "Select a one- or two-dimensional region using the mouse or touch.",
             "owner": {
               "login": "d3"
             },
@@ -2861,7 +3006,6 @@
               "totalCount": 23
             },
             "isFork": false,
-            "description": "Select a one- or two-dimensional region using the mouse or touch.",
             "homepageURL": "",
             "createdAt": "2016-05-02T18:10:14Z",
             "updatedAt": "2017-02-09T15:33:20Z",
@@ -2894,6 +3038,7 @@
           "node": {
             "id": "MDEwOlJlcG9zaXRvcnk1ODc1MTcwNQ\u003d\u003d",
             "name": "d3-geo-projection-bower",
+            "description": "Generated files from d3-geo-projection for Bower.",
             "owner": {
               "login": "mbostock-bower"
             },
@@ -2907,7 +3052,6 @@
               "totalCount": 0
             },
             "isFork": false,
-            "description": "Generated files from d3-geo-projection for Bower.",
             "homepageURL": "https://github.com/d3/d3-geo-projection",
             "createdAt": "2016-05-13T15:27:35Z",
             "updatedAt": "2016-05-13T15:51:17Z",
@@ -2940,6 +3084,7 @@
           "node": {
             "id": "MDEwOlJlcG9zaXRvcnk2MDQyMzA4OA\u003d\u003d",
             "name": "d3-scale-chromatic",
+            "description": "Sequential, diverging and categorical color scales derived from ColorBrewer.",
             "owner": {
               "login": "d3"
             },
@@ -2950,13 +3095,12 @@
               "totalCount": 10
             },
             "stargazers": {
-              "totalCount": 124
+              "totalCount": 125
             },
             "isFork": false,
-            "description": "Sequential, diverging and categorical color scales derived from ColorBrewer.",
             "homepageURL": "",
             "createdAt": "2016-06-04T17:53:15Z",
-            "updatedAt": "2017-04-05T01:09:02Z",
+            "updatedAt": "2017-04-06T20:26:18Z",
             "primaryLanguage": {
               "color": "#f1e05a",
               "id": "MDg6TGFuZ3VhZ2UxNDA\u003d",
@@ -2986,6 +3130,7 @@
           "node": {
             "id": "MDEwOlJlcG9zaXRvcnk2MDY1Mjk5MA\u003d\u003d",
             "name": "preamble",
+            "description": "Generate a tiny preamble from a package.json.",
             "owner": {
               "login": "mbostock"
             },
@@ -2996,12 +3141,12 @@
               "totalCount": 1
             },
             "stargazers": {
-              "totalCount": 10
+              "totalCount": 11
             },
             "isFork": false,
-            "description": "Generate a tiny preamble from a package.json.",
+            "homepageURL": null,
             "createdAt": "2016-06-07T23:16:10Z",
-            "updatedAt": "2016-11-13T19:48:16Z",
+            "updatedAt": "2017-04-06T10:41:59Z",
             "primaryLanguage": {
               "color": "#f1e05a",
               "id": "MDg6TGFuZ3VhZ2UxNDA\u003d",
@@ -3031,6 +3176,7 @@
           "node": {
             "id": "MDEwOlJlcG9zaXRvcnk2MDczNTkzNw\u003d\u003d",
             "name": "d3-hsv",
+            "description": "The HSV (Hue, Saturation, Value) color space.",
             "owner": {
               "login": "d3"
             },
@@ -3044,7 +3190,6 @@
               "totalCount": 8
             },
             "isFork": false,
-            "description": "The HSV (Hue, Saturation, Value) color space.",
             "homepageURL": "",
             "createdAt": "2016-06-08T22:49:19Z",
             "updatedAt": "2017-01-29T08:05:30Z",
@@ -3056,7 +3201,7 @@
             "languages": {
               "edges": [
                 {
-                  "size": 14462,
+                  "size": 15542,
                   "node": {
                     "name": "JavaScript",
                     "id": "MDg6TGFuZ3VhZ2UxNDA\u003d",
@@ -3067,9 +3212,9 @@
             },
             "contribute": {
               "w": 1465084800,
-              "a": 1146,
-              "d": 627,
-              "c": 15
+              "a": 1214,
+              "d": 632,
+              "c": 19
             }
           }
         },
@@ -3077,6 +3222,7 @@
           "node": {
             "id": "MDEwOlJlcG9zaXRvcnk2MDc5ODY5Nw\u003d\u003d",
             "name": "justascii",
+            "description": "Rewrite JavaScript to escape any non-ASCII characters in string literals.",
             "owner": {
               "login": "mbostock"
             },
@@ -3090,7 +3236,7 @@
               "totalCount": 6
             },
             "isFork": false,
-            "description": "Rewrite JavaScript to escape any non-ASCII characters in string literals.",
+            "homepageURL": null,
             "createdAt": "2016-06-09T18:47:03Z",
             "updatedAt": "2016-11-13T19:48:12Z",
             "primaryLanguage": {
@@ -3122,6 +3268,7 @@
           "node": {
             "id": "MDEwOlJlcG9zaXRvcnk2MDgwMjMxMA\u003d\u003d",
             "name": "rollup-plugin-ascii",
+            "description": "Rewrite JavaScript to escape any non-ASCII characters in string literals.",
             "owner": {
               "login": "mbostock"
             },
@@ -3135,7 +3282,7 @@
               "totalCount": 5
             },
             "isFork": false,
-            "description": "Rewrite JavaScript to escape any non-ASCII characters in string literals.",
+            "homepageURL": null,
             "createdAt": "2016-06-09T19:45:19Z",
             "updatedAt": "2017-01-04T14:23:55Z",
             "primaryLanguage": {
@@ -3167,6 +3314,7 @@
           "node": {
             "id": "MDEwOlJlcG9zaXRvcnk2MTQ0NzMwOQ\u003d\u003d",
             "name": "d3-parent",
+            "description": "inverted iteration for nested data binds",
             "owner": {
               "login": "vijithassar"
             },
@@ -3180,7 +3328,7 @@
               "totalCount": 10
             },
             "isFork": false,
-            "description": "inverted iteration for nested data binds",
+            "homepageURL": null,
             "createdAt": "2016-06-18T18:33:42Z",
             "updatedAt": "2016-10-28T19:59:37Z",
             "primaryLanguage": {
@@ -3212,6 +3360,7 @@
           "node": {
             "id": "MDEwOlJlcG9zaXRvcnk2MTcyOTc4NA\u003d\u003d",
             "name": "d3-tile",
+            "description": "Compute the quadtree tiles to display in a rectangular viewport.",
             "owner": {
               "login": "d3"
             },
@@ -3225,7 +3374,6 @@
               "totalCount": 28
             },
             "isFork": false,
-            "description": "Compute the quadtree tiles to display in a rectangular viewport.",
             "homepageURL": "",
             "createdAt": "2016-06-22T15:22:44Z",
             "updatedAt": "2017-03-29T16:28:54Z",
@@ -3258,6 +3406,7 @@
           "node": {
             "id": "MDEwOlJlcG9zaXRvcnk2MTg4ODUyNw\u003d\u003d",
             "name": "d3-3.x-api-reference",
+            "description": "An archive of the D3 3.x API Reference.",
             "owner": {
               "login": "d3"
             },
@@ -3265,16 +3414,16 @@
               "totalCount": 8
             },
             "forks": {
-              "totalCount": 139
+              "totalCount": 141
             },
             "stargazers": {
-              "totalCount": 47
+              "totalCount": 48
             },
             "isFork": false,
-            "description": "An archive of the D3 3.x API Reference.",
             "homepageURL": "https://github.com/d3/d3-3.x-api-reference/blob/master/API-Reference.md",
             "createdAt": "2016-06-24T14:05:31Z",
-            "updatedAt": "2017-03-31T18:43:03Z",
+            "updatedAt": "2017-04-06T13:33:26Z",
+            "primaryLanguage": null,
             "languages": {
               "edges": []
             },
@@ -3290,6 +3439,7 @@
           "node": {
             "id": "MDEwOlJlcG9zaXRvcnk2MjQxMjg3NQ\u003d\u003d",
             "name": "d3-hcg",
+            "description": "The HCG (Hue, Chroma, Grayness) color space derived from the Munsell color system. ",
             "owner": {
               "login": "d3"
             },
@@ -3303,7 +3453,6 @@
               "totalCount": 9
             },
             "isFork": false,
-            "description": "The HCG (Hue, Chroma, Grayness) color space derived from the Munsell color system. ",
             "homepageURL": "",
             "createdAt": "2016-07-01T18:37:07Z",
             "updatedAt": "2017-01-29T08:05:23Z",
@@ -3336,6 +3485,7 @@
           "node": {
             "id": "MDEwOlJlcG9zaXRvcnk2NTEwOTcxNA\u003d\u003d",
             "name": "rollup",
+            "description": "Next-generation ES6 module bundler (fork for PRs)",
             "owner": {
               "login": "Permutatrix"
             },
@@ -3349,7 +3499,6 @@
               "totalCount": 0
             },
             "isFork": true,
-            "description": "Next-generation ES6 module bundler (fork for PRs)",
             "homepageURL": "http://rollupjs.org",
             "createdAt": "2016-08-07T01:25:39Z",
             "updatedAt": "2016-08-07T01:25:52Z",
@@ -3382,6 +3531,7 @@
           "node": {
             "id": "MDEwOlJlcG9zaXRvcnk2NzA3MTc3Nw\u003d\u003d",
             "name": "file-source",
+            "description": "Read files as standard WhatWG streams in Node.",
             "owner": {
               "login": "mbostock"
             },
@@ -3395,7 +3545,6 @@
               "totalCount": 22
             },
             "isFork": false,
-            "description": "Read files as standard WhatWG streams in Node.",
             "homepageURL": "",
             "createdAt": "2016-08-31T20:37:24Z",
             "updatedAt": "2016-11-13T19:48:10Z",
@@ -3428,6 +3577,7 @@
           "node": {
             "id": "MDEwOlJlcG9zaXRvcnk2NzI2MDE3Mg\u003d\u003d",
             "name": "stream-source",
+            "description": "Read Node streams as standard WhatWG streams.",
             "owner": {
               "login": "mbostock"
             },
@@ -3441,7 +3591,6 @@
               "totalCount": 7
             },
             "isFork": false,
-            "description": "Read Node streams as standard WhatWG streams.",
             "homepageURL": "",
             "createdAt": "2016-09-02T23:06:17Z",
             "updatedAt": "2016-11-13T19:48:20Z",
@@ -3474,6 +3623,7 @@
           "node": {
             "id": "MDEwOlJlcG9zaXRvcnk2NzQ1MjIxMw\u003d\u003d",
             "name": "slice-source",
+            "description": "Read the specified number of bytes from a standard WhatWG stream.",
             "owner": {
               "login": "mbostock"
             },
@@ -3487,7 +3637,6 @@
               "totalCount": 6
             },
             "isFork": false,
-            "description": "Read the specified number of bytes from a standard WhatWG stream.",
             "homepageURL": "",
             "createdAt": "2016-09-05T21:33:16Z",
             "updatedAt": "2016-11-13T19:48:18Z",
@@ -3520,6 +3669,7 @@
           "node": {
             "id": "MDEwOlJlcG9zaXRvcnk2NzU0NTYwNw\u003d\u003d",
             "name": "array-source",
+            "description": "Read arrays as standard WhatWG streams.",
             "owner": {
               "login": "mbostock"
             },
@@ -3533,7 +3683,7 @@
               "totalCount": 3
             },
             "isFork": false,
-            "description": "Read arrays as standard WhatWG streams.",
+            "homepageURL": null,
             "createdAt": "2016-09-06T20:48:10Z",
             "updatedAt": "2017-03-29T20:18:54Z",
             "primaryLanguage": {
@@ -3565,6 +3715,7 @@
           "node": {
             "id": "MDEwOlJlcG9zaXRvcnk2NzU0NzQxNA\u003d\u003d",
             "name": "path-source",
+            "description": "Read files in Node, or fetch URLs in browser, as standard WhatWG streams.",
             "owner": {
               "login": "mbostock"
             },
@@ -3578,7 +3729,7 @@
               "totalCount": 3
             },
             "isFork": false,
-            "description": "Read files in Node, or fetch URLs in browser, as standard WhatWG streams.",
+            "homepageURL": null,
             "createdAt": "2016-09-06T21:14:29Z",
             "updatedAt": "2017-03-29T20:19:00Z",
             "primaryLanguage": {
@@ -3610,6 +3761,7 @@
           "node": {
             "id": "MDEwOlJlcG9zaXRvcnk2Nzc1MDM2MA\u003d\u003d",
             "name": "ndjson-cli",
+            "description": "Command line tools for operating on newline-delimited JSON streams.",
             "owner": {
               "login": "mbostock"
             },
@@ -3623,7 +3775,7 @@
               "totalCount": 104
             },
             "isFork": false,
-            "description": "Command line tools for operating on newline-delimited JSON streams.",
+            "homepageURL": null,
             "createdAt": "2016-09-09T00:21:12Z",
             "updatedAt": "2017-03-27T17:47:04Z",
             "primaryLanguage": {
@@ -3655,6 +3807,7 @@
           "node": {
             "id": "MDEwOlJlcG9zaXRvcnk2ODk4MzA5OA\u003d\u003d",
             "name": "d3-bboxCollide",
+            "description": "Bounding box collision detection for forceSimulation in d3v4",
             "owner": {
               "login": "emeeks"
             },
@@ -3668,7 +3821,7 @@
               "totalCount": 36
             },
             "isFork": false,
-            "description": "Bounding box collision detection for forceSimulation in d3v4",
+            "homepageURL": null,
             "createdAt": "2016-09-23T02:58:16Z",
             "updatedAt": "2017-03-22T19:12:45Z",
             "primaryLanguage": {
@@ -3700,6 +3853,7 @@
           "node": {
             "id": "MDEwOlJlcG9zaXRvcnk3MTY0NzYyNg\u003d\u003d",
             "name": "d3-fetch",
+            "description": "Convenient parsing for Fetch.",
             "owner": {
               "login": "d3"
             },
@@ -3713,7 +3867,7 @@
               "totalCount": 51
             },
             "isFork": false,
-            "description": "Convenient parsing for Fetch.",
+            "homepageURL": null,
             "createdAt": "2016-10-22T15:23:51Z",
             "updatedAt": "2017-03-14T02:33:39Z",
             "primaryLanguage": {
@@ -3745,6 +3899,7 @@
           "node": {
             "id": "MDEwOlJlcG9zaXRvcnk3MjM2ODcyMg\u003d\u003d",
             "name": "topojson-client",
+            "description": "Manipulate TopoJSON, such as to merge shapes, and convert it back to GeoJSON.",
             "owner": {
               "login": "topojson"
             },
@@ -3758,7 +3913,6 @@
               "totalCount": 20
             },
             "isFork": false,
-            "description": "Manipulate TopoJSON, such as to merge shapes, and convert it back to GeoJSON.",
             "homepageURL": "",
             "createdAt": "2016-10-30T18:56:34Z",
             "updatedAt": "2017-03-23T00:12:26Z",
@@ -3791,6 +3945,7 @@
           "node": {
             "id": "MDEwOlJlcG9zaXRvcnk3MjQ2NDY1MQ\u003d\u003d",
             "name": "topojson-simplify",
+            "description": "Filter and simplify geometries while preserving topology for smaller files and faster rendering!",
             "owner": {
               "login": "topojson"
             },
@@ -3804,7 +3959,6 @@
               "totalCount": 14
             },
             "isFork": false,
-            "description": "Filter and simplify geometries while preserving topology for smaller files and faster rendering!",
             "homepageURL": "",
             "createdAt": "2016-10-31T18:11:38Z",
             "updatedAt": "2017-03-02T22:12:41Z",
@@ -3837,6 +3991,7 @@
           "node": {
             "id": "MDEwOlJlcG9zaXRvcnk3Mjc3ODY4Mg\u003d\u003d",
             "name": "topojson-1.x-api-reference",
+            "description": "An archive of the topojson 1.x API Reference.",
             "owner": {
               "login": "topojson"
             },
@@ -3850,10 +4005,10 @@
               "totalCount": 1
             },
             "isFork": false,
-            "description": "An archive of the topojson 1.x API Reference.",
             "homepageURL": "https://github.com/topojson/topojson-1.x-api-reference/blob/master/API-Reference.md",
             "createdAt": "2016-11-03T19:17:16Z",
             "updatedAt": "2017-02-13T12:39:45Z",
+            "primaryLanguage": null,
             "languages": {
               "edges": []
             },
@@ -3869,6 +4024,7 @@
           "node": {
             "id": "MDEwOlJlcG9zaXRvcnk3Mzg1MzgxNQ\u003d\u003d",
             "name": "d3-cam02",
+            "description": "A d3 implementation of the CIECAM02 and CIECAM02-UCS color appearance models",
             "owner": {
               "login": "connorgr"
             },
@@ -3876,16 +4032,15 @@
               "totalCount": 4
             },
             "forks": {
-              "totalCount": 2
+              "totalCount": 4
             },
             "stargazers": {
               "totalCount": 11
             },
             "isFork": false,
-            "description": "A d3 implementation of the CIECAM02 and CIECAM02-UCS color appearance models",
             "homepageURL": "http://gramaz.io/d3-cam02",
             "createdAt": "2016-11-15T20:47:33Z",
-            "updatedAt": "2017-02-21T22:07:14Z",
+            "updatedAt": "2017-04-08T00:02:20Z",
             "primaryLanguage": {
               "color": "#e34c26",
               "id": "MDg6TGFuZ3VhZ2U0MTc\u003d",
@@ -3947,6 +4102,7 @@
           "node": {
             "id": "MDEwOlJlcG9zaXRvcnk3NjI4Mjc4MA\u003d\u003d",
             "name": "topojson-server",
+            "description": "Convert GeoJSON to TopoJSON.",
             "owner": {
               "login": "topojson"
             },
@@ -3957,12 +4113,12 @@
               "totalCount": 1
             },
             "stargazers": {
-              "totalCount": 24
+              "totalCount": 25
             },
             "isFork": false,
-            "description": "Convert GeoJSON to TopoJSON.",
+            "homepageURL": null,
             "createdAt": "2016-12-12T18:14:43Z",
-            "updatedAt": "2017-03-30T20:45:06Z",
+            "updatedAt": "2017-04-05T15:04:12Z",
             "primaryLanguage": {
               "color": "#f1e05a",
               "id": "MDg6TGFuZ3VhZ2UxNDA\u003d",
@@ -3992,6 +4148,7 @@
           "node": {
             "id": "MDEwOlJlcG9zaXRvcnk4MDg4MjYxMQ\u003d\u003d",
             "name": "svjimmy",
+            "description": "A bookmarklet to download SVG as PNG.",
             "owner": {
               "login": "mbostock"
             },
@@ -4005,7 +4162,6 @@
               "totalCount": 60
             },
             "isFork": false,
-            "description": "A bookmarklet to download SVG as PNG.",
             "homepageURL": "https://mbostock.github.io/svjimmy/",
             "createdAt": "2017-02-04T01:00:15Z",
             "updatedAt": "2017-03-13T18:50:20Z",
@@ -4046,22 +4202,23 @@
           "node": {
             "id": "MDEwOlJlcG9zaXRvcnk4NzI0MTg3Mg\u003d\u003d",
             "name": "d3-contour",
+            "description": "Compute contour polygons using marching squares.",
             "owner": {
               "login": "d3"
             },
             "watchers": {
-              "totalCount": 3
+              "totalCount": 4
             },
             "forks": {
-              "totalCount": 0
+              "totalCount": 4
             },
             "stargazers": {
-              "totalCount": 8
+              "totalCount": 40
             },
             "isFork": false,
-            "description": "Compute contour lines using marching squares.",
+            "homepageURL": "",
             "createdAt": "2017-04-04T22:41:34Z",
-            "updatedAt": "2017-04-05T13:15:52Z",
+            "updatedAt": "2017-04-08T08:29:03Z",
             "primaryLanguage": {
               "color": "#f1e05a",
               "id": "MDg6TGFuZ3VhZ2UxNDA\u003d",
@@ -4070,7 +4227,7 @@
             "languages": {
               "edges": [
                 {
-                  "size": 1237,
+                  "size": 7488,
                   "node": {
                     "name": "JavaScript",
                     "id": "MDg6TGFuZ3VhZ2UxNDA\u003d",
@@ -4081,9 +4238,9 @@
             },
             "contribute": {
               "w": 1491091200,
-              "a": 217,
-              "d": 27,
-              "c": 3
+              "a": 1083,
+              "d": 635,
+              "c": 63
             }
           }
         }

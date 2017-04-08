@@ -75,13 +75,22 @@ class MainController {
         model.addAttribute("authuser", cv.getAsJsonObject("viewer"));
         model.addAttribute("targetuser", cv.getAsJsonObject("user"));
 
-        List<JSONCuteStringsObj> orgs = StreamSupport.stream(cv.getAsJsonObject("user").getAsJsonObject("organizations")
-                .getAsJsonArray("nodes").spliterator(), false)
-                .map((jsEl) -> new JSONCuteStringsObj(jsEl.getAsJsonObject()))
-                .collect(Collectors.toList());
+        List<JSONCuteStringsObj> orgs = cv.getAsJsonObject("user").getAsJsonObject("organizations")
+                .getAsJsonArray("nodes");
 
         model.addAttribute("orgs", orgs);
-//        List<String> orgs = Arrays.asList("First", "Second", "Third");
+
+        List<JSONCuteStringsObj> pinned = cv.getAsJsonObject("user").getAsJsonObject("pinnedRepositories")
+                .getAsJsonArray("nodes");
+
+        model.addAttribute("pinned", pinned);
+
+        List<JSONCuteStringsObj> contributed = cv.getAsJsonObject("user").getAsJsonObject("contributedRepositories")
+                .getAsJsonArray("edges");
+
+        model.addAttribute("contributed", contributed);
+
+        //        List<String> orgs = Arrays.asList("First", "Second", "Third");
 //        model.addAttribute("orgs", orgs);
 
 //        model.addAttribute("targetuser", new JSONCuteStringsObj(gitHubService.getFullCvJSON("")));

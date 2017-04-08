@@ -67,7 +67,8 @@ public class GitHubServiceTest {
 
     @Test
     public void getFullCvJSON() throws Exception {
-        JsonObject jsonObject = gitHubService.getFullCvJSON("ALEXSSS");
+        JsonObject jsonObject = gitHubService.getFullCvJSON("mbostock");
+//        JsonObject jsonObject = gitHubService.getFullCvJSON("ALEXSSS");
 //        JsonObject jsonObject = gitHubService.getFullCvJSON("avgaydashenko");
         System.out.println(gson.toJson(jsonObject));
     }
