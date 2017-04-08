@@ -12,11 +12,16 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import sun.awt.image.ImageWatched;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
+import java.util.Arrays;
+import java.util.List;
 import java.util.concurrent.atomic.AtomicInteger;
+import java.util.stream.Collectors;
+import java.util.stream.StreamSupport;
 
 @Controller
 @RequestMapping("/")
@@ -59,7 +64,7 @@ class MainController {
         return "test";
     }
 
-    @GetMapping("/{nick}")
+    @GetMapping("/cv/{nick}")
     public String parsePage(HttpSession session,
                             @PathVariable String nick,
                             Model model) throws Exception {
@@ -69,6 +74,16 @@ class MainController {
         JSONCuteStringsObj cv = new JSONCuteStringsObj(gitHubService.getFullCvJSONMock(nick));
         model.addAttribute("authuser", cv.getAsJsonObject("viewer"));
         model.addAttribute("targetuser", cv.getAsJsonObject("user"));
+
+        List<JSONCuteStringsObj> orgs = StreamSupport.stream(cv.getAsJsonObject("user").getAsJsonObject("organizations")
+                .getAsJsonArray("nodes").spliterator(), false)
+                .map((jsEl) -> new JSONCuteStringsObj(jsEl.getAsJsonObject()))
+                .collect(Collectors.toList());
+
+        model.addAttribute("orgs", orgs);
+//        List<String> orgs = Arrays.asList("First", "Second", "Third");
+//        model.addAttribute("orgs", orgs);
+
 //        model.addAttribute("targetuser", new JSONCuteStringsObj(gitHubService.getFullCvJSON("")));
 
         return "styled/cv";

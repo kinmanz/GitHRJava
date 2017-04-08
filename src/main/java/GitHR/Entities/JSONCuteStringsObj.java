@@ -1,5 +1,6 @@
 package GitHR.Entities;
 
+import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 
@@ -18,6 +19,10 @@ public class JSONCuteStringsObj {
 
     public JSONCuteStringsObj getAsJsonObject(String memberName) {
         return new JSONCuteStringsObj(jsonObject.getAsJsonObject(memberName));
+    }
+
+    public JsonArray getAsJsonArray(String memberName) {
+        return jsonObject.getAsJsonArray(memberName);
     }
 
     /*
